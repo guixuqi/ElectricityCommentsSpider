@@ -63,7 +63,10 @@ class AmazonNewReview(AmazonReview):
                     REVIEW_DATE = datetime.now().strftime('%Y/%m/%d')
                 # 评论ID
                 if len(div.xpath("./@id")) > 0:
-                    REVIEW_ID = div.xpath("./@id")[0]
+                    if self.SKU_ID == "B0749BX1X3":
+                        REVIEW_ID = div.xpath("./@id")[0] + "_UK"
+                    else:
+                        REVIEW_ID = div.xpath("./@id")[0]
                 else:
                     continue
                 # 评论星级

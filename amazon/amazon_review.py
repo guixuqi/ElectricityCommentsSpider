@@ -111,7 +111,10 @@ class AmazonReview:
             try:
                 # 评论ID
                 if len(div.xpath("./@id")) > 0:
-                    REVIEW_ID = div.xpath("./@id")[0]
+                    if self.SKU_ID == "B0749BX1X3":
+                        REVIEW_ID = div.xpath("./@id")[0] + "_UK"
+                    else:
+                        REVIEW_ID = div.xpath("./@id")[0]
                 else:
                     continue
                 # 评论标题
@@ -239,6 +242,8 @@ class AmazonReview:
                 log_info("amazon,{}共更新了{}条,".format(self.SKU_ID, self.comment_num))
                 return
         # print(self.comment_num)
+        print("amazon,{}共抓取了{}条,".format(self.SKU_ID, self.comment_num))
+        log_info("amazon,{}共抓取了{}条,".format(self.SKU_ID, self.comment_num))
 
 def run(urls):
     start = time.time()

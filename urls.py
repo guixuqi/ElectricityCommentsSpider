@@ -76,7 +76,7 @@ start_url31 = "https://www.amazon.com/Anker-Qi-Certified-Compatible-Fast-Chargin
 # Razer Kraken Tournament  B07G4KD8WW
 start_url32 = "https://www.amazon.co.uk/Razer-Kraken-Tournament-Headset-Controller/dp/B07G4KD8WW/ref=sr_1_1"
 # # Corsair RGB   B0749BX1X3 与 B0749CW8X6评论相同
-# start_url33 = "https://www.amazon.co.uk/Corsair-Customisable-Optimised-Unidirectional-Microphone/dp/B0749BX1X3/ref=sr_1_1"
+start_url33 = "https://www.amazon.co.uk/Corsair-Customisable-Optimised-Unidirectional-Microphone/dp/B0749BX1X3/ref=sr_1_1"
 start_url22 = "https://www.amazon.de/Gaming-Headset-PS4Xbox-OneMobile-PlayStation/dp/B0711V7BV6/ref=sr_1_1"
 start_url25 = "https://www.amazon.de/Razer-Thresher-Xbox-Ohrumschließendes-undirektionales/dp/B075YDD1P2/ref=sr_1_1"
 # Corsair Void Pro Surround Gaming Headset
@@ -180,6 +180,7 @@ def amazon_urls():
     # url_list.append(start_url30)
     # url_list.append(start_url31)
     # url_list.append(start_url32)
+    # url_list.append(start_url33)
     url_list.append(amazon_url34)
     url_list.append(amazon_url35)
     url_list.append(amazon_url36)
