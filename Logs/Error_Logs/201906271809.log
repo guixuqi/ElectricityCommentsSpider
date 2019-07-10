@@ -1,0 +1,20 @@
+2019-06-27 18:09:08,006 - root - ERROR - utils  - 153 - Amazon(B075JBP2P7_DE)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)
+2019-06-27 18:09:54,868 - root - ERROR - utils  - 153 - Amazon(B0749BX1X3_DE)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)
+2019-06-27 18:10:48,367 - root - ERROR - utils  - 153 - Amazon(B0711V7BV6_DE)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)
+2019-06-27 18:11:05,393 - root - ERROR - utils  - 153 - Amazon(B075YDD1P2_DE)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)

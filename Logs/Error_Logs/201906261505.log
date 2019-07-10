@@ -1,0 +1,70 @@
+2019-06-26 15:07:00,981 - root - ERROR - utils  - 147 - BestBuy(6349969)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 156, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)
+2019-06-26 15:07:17,993 - root - ERROR - utils  - 147 - JD(100002361195)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:07:25,631 - root - ERROR - utils  - 147 - JD(100005152874)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,073 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,078 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,082 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,087 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,092 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,095 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,100 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,104 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:14,108 - root - ERROR - utils  - 147 - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 148, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:33,981 - root - ERROR - utils  - 147 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\TMALL\new_tmall.py", line 82, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)
+2019-06-26 15:08:34,050 - root - ERROR - utils  - 147 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\TMALL\new_tmall.py", line 82, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PK)

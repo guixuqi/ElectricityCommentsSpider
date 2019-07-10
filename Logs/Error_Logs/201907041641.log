@@ -1,0 +1,10 @@
+2019-07-04 16:41:10,123 - root - ERROR - utils  - 161 - Amazon(B07N6NRS8Q)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f62d' in position 11: illegal multibyte sequence
+2019-07-04 16:41:11,082 - root - ERROR - utils  - 161 - Amazon(B07N6NRS8Q)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 11: illegal multibyte sequence

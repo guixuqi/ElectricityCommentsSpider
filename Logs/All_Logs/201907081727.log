@@ -1,0 +1,348 @@
+2019-07-08 17:28:46,465 - root - INFO - Amazon,无url信息或传入参数格式不是列表
+2019-07-08 17:28:46,466 - root - INFO - BestBuy,无url信息或传入参数格式不是列表
+2019-07-08 17:28:46,466 - root - INFO - JD,无url信息或传入参数格式不是列表
+2019-07-08 17:28:46,466 - root - INFO - Tmall,无url信息或传入参数格式不是列表
+2019-07-08 17:28:48,780 - root - INFO - amazon,B07G5RKF3W共更新了0条,
+2019-07-08 17:28:51,037 - root - INFO - amazon,B06XGBPW3D共更新了0条,
+2019-07-08 17:28:53,451 - root - INFO - amazon,B074NBSF9N共更新了0条,
+2019-07-08 17:28:56,656 - root - INFO - amazon,B00SAYCXWG共更新了0条,
+2019-07-08 17:28:59,011 - root - INFO - amazon,B072DRCM1Q共更新了0条,
+2019-07-08 17:29:01,874 - root - INFO - amazon,B06Y3YN2C8共更新了0条,
+2019-07-08 17:29:03,524 - root - INFO - amazon,B06XGBPW3D共更新了0条,
+2019-07-08 17:29:05,282 - root - INFO - amazon,B07GKHYVM8共更新了0条,
+2019-07-08 17:29:08,191 - root - INFO - amazon,B01MQWUXZS共更新了1条,
+2019-07-08 17:29:10,355 - root - INFO - amazon,B0749CW8X6共更新了0条,
+2019-07-08 17:29:11,877 - root - INFO - amazon,B07MCGZK3B共更新了0条,
+2019-07-08 17:29:12,117 - root - ERROR - Amazon(https://www.amazon.co.jp/Zero-Audio-TWZ-1000-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3/dp/B07N6NRS8Q/ref=sr_1_1)报错信息：请求失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 453, in wrap_socket
+    cnx.do_handshake()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\OpenSSL\SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\OpenSSL\SSL.py", line 1639, in _raise_ssl_error
+    raise SysCallError(errno, errorcode.get(errno))
+OpenSSL.SSL.SysCallError: (10054, 'WSAECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 344, in connect
+    ssl_context=context)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 459, in wrap_socket
+    raise ssl.SSLError('bad handshake: %r' % e)
+ssl.SSLError: ("bad handshake: SysCallError(10054, 'WSAECONNRESET')",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.co.jp', port=443): Max retries exceeded with url: /Zero-Audio-TWZ-1000-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3/product-reviews/B07N6NRS8Q/ref=sr_1_1?sortBy=recent&language=zh_CN (Caused by SSLError(SSLError("bad handshake: SysCallError(10054, 'WSAECONNRESET')")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\amazon_review.py", line 232, in run
+    review_html = self.parse_url(review_url)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\six.py", line 693, in reraise
+    raise value
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\amazon_review.py", line 40, in parse_url
+    resp = requests.get(url, headers=self.headers, params=kw, timeout=100)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.amazon.co.jp', port=443): Max retries exceeded with url: /Zero-Audio-TWZ-1000-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3/product-reviews/B07N6NRS8Q/ref=sr_1_1?sortBy=recent&language=zh_CN (Caused by SSLError(SSLError("bad handshake: SysCallError(10054, 'WSAECONNRESET')")))
+2019-07-08 17:29:14,863 - root - INFO - amazon,B07H314BYH共更新了0条,
+2019-07-08 17:29:17,414 - root - INFO - amazon,B0748K7JW6共更新了0条,
+2019-07-08 17:29:18,888 - root - INFO - amazon,B0749BX1X3共更新了0条,
+2019-07-08 17:29:21,024 - root - INFO - amazon,B075JBP2P7共更新了0条,
+2019-07-08 17:29:25,863 - root - INFO - amazon,B075JBP2P7共更新了0条,
+2019-07-08 17:29:26,113 - root - ERROR - Amazon(https://www.amazon.co.jp/Liberty-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%80%90%E6%9C%80%E5%A4%A724%E6%99%82%E9%96%93%E9%9F%B3%E6%A5%BD%E5%86%8D%E7%94%9F-IPX5%E9%98%B2%E6%B0%B4%E8%A6%8F%E6%A0%BC%E3%80%91/dp/B075SSLKDB/ref=sr_1_1)报错信息：请求失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 453, in wrap_socket
+    cnx.do_handshake()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\OpenSSL\SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\OpenSSL\SSL.py", line 1639, in _raise_ssl_error
+    raise SysCallError(errno, errorcode.get(errno))
+OpenSSL.SSL.SysCallError: (10054, 'WSAECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 344, in connect
+    ssl_context=context)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 459, in wrap_socket
+    raise ssl.SSLError('bad handshake: %r' % e)
+ssl.SSLError: ("bad handshake: SysCallError(10054, 'WSAECONNRESET')",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.co.jp', port=443): Max retries exceeded with url: /Liberty-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%80%90%E6%9C%80%E5%A4%A724%E6%99%82%E9%96%93%E9%9F%B3%E6%A5%BD%E5%86%8D%E7%94%9F-IPX5%E9%98%B2%E6%B0%B4%E8%A6%8F%E6%A0%BC%E3%80%91/product-reviews/B075SSLKDB/ref=sr_1_1?sortBy=recent&language=zh_CN (Caused by SSLError(SSLError("bad handshake: SysCallError(10054, 'WSAECONNRESET')")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\amazon_review.py", line 232, in run
+    review_html = self.parse_url(review_url)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\six.py", line 693, in reraise
+    raise value
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\amazon_review.py", line 40, in parse_url
+    resp = requests.get(url, headers=self.headers, params=kw, timeout=100)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.amazon.co.jp', port=443): Max retries exceeded with url: /Liberty-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%80%90%E6%9C%80%E5%A4%A724%E6%99%82%E9%96%93%E9%9F%B3%E6%A5%BD%E5%86%8D%E7%94%9F-IPX5%E9%98%B2%E6%B0%B4%E8%A6%8F%E6%A0%BC%E3%80%91/product-reviews/B075SSLKDB/ref=sr_1_1?sortBy=recent&language=zh_CN (Caused by SSLError(SSLError("bad handshake: SysCallError(10054, 'WSAECONNRESET')")))
+2019-07-08 17:29:27,494 - root - INFO - amazon,B075JBP2P7共更新了0条,
+2019-07-08 17:29:28,960 - root - INFO - amazon,B01N3AJ0ID共更新了0条,
+2019-07-08 17:29:30,726 - root - INFO - amazon,B0711V7BV6共更新了0条,
+2019-07-08 17:29:32,705 - root - INFO - amazon,B071S9RGB1共更新了0条,
+2019-07-08 17:29:34,694 - root - INFO - amazon,B06Y3YNSMJ共更新了0条,
+2019-07-08 17:29:36,796 - root - INFO - amazon,B01G3WBCQY共更新了0条,
+2019-07-08 17:29:39,006 - root - INFO - amazon,B0756Z8X82共更新了1条,
+2019-07-08 17:29:41,084 - root - INFO - amazon,B0753Z4PGC共更新了0条,
+2019-07-08 17:29:42,665 - root - INFO - amazon,B078WRCW35共更新了0条,
+2019-07-08 17:29:44,475 - root - INFO - amazon,B00Y839YMU共更新了0条,
+2019-07-08 17:29:46,243 - root - INFO - amazon,B01KJL4XNY共更新了1条,
+2019-07-08 17:29:46,471 - root - ERROR - Amazon(https://www.amazon.co.jp/%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-Bluetooth%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89SoftBank-GLIDiC-SB-WS72-MRTW-BK/dp/B07KNK8XCP/ref=sr_1_1)报错信息：请求失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 453, in wrap_socket
+    cnx.do_handshake()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\OpenSSL\SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\OpenSSL\SSL.py", line 1639, in _raise_ssl_error
+    raise SysCallError(errno, errorcode.get(errno))
+OpenSSL.SSL.SysCallError: (10054, 'WSAECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 344, in connect
+    ssl_context=context)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 459, in wrap_socket
+    raise ssl.SSLError('bad handshake: %r' % e)
+ssl.SSLError: ("bad handshake: SysCallError(10054, 'WSAECONNRESET')",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.co.jp', port=443): Max retries exceeded with url: /%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-Bluetooth%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89SoftBank-GLIDiC-SB-WS72-MRTW-BK/product-reviews/B07KNK8XCP/ref=sr_1_1?sortBy=recent&language=zh_CN (Caused by SSLError(SSLError("bad handshake: SysCallError(10054, 'WSAECONNRESET')")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\amazon_review.py", line 232, in run
+    review_html = self.parse_url(review_url)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\six.py", line 693, in reraise
+    raise value
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\amazon_review.py", line 40, in parse_url
+    resp = requests.get(url, headers=self.headers, params=kw, timeout=100)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.amazon.co.jp', port=443): Max retries exceeded with url: /%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-Bluetooth%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89SoftBank-GLIDiC-SB-WS72-MRTW-BK/product-reviews/B07KNK8XCP/ref=sr_1_1?sortBy=recent&language=zh_CN (Caused by SSLError(SSLError("bad handshake: SysCallError(10054, 'WSAECONNRESET')")))
+2019-07-08 17:29:46,477 - root - INFO - Amazon_end,耗时60.010690689086914秒
+2019-07-08 17:29:50,411 - root - INFO - BestBuy,5368400共更新了0条
+2019-07-08 17:29:55,258 - root - INFO - BestBuy,5892993共更新了0条
+2019-07-08 17:29:57,761 - root - INFO - BestBuy,6349969共更新了0条,
+2019-07-08 17:29:59,135 - root - INFO - BestBuy(6349969)获取评论主标签失败
+2019-07-08 17:30:01,104 - root - INFO - BestBuy(6349969)获取评论主标签失败
+2019-07-08 17:30:01,104 - root - INFO - BestBuy(6349969)获取评论主标签失败
+2019-07-08 17:30:01,104 - root - INFO - BestBuy,6349969共更新了0条
+2019-07-08 17:30:01,105 - root - INFO - BestBuy_end,耗时14.627684593200684秒
+2019-07-08 17:30:01,482 - root - ERROR - JD(7438547)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:01,491 - root - INFO - JD,https://item.jd.com/7438547.html共更新了0条,
+2019-07-08 17:30:01,878 - root - ERROR - JD(8031600)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:01,884 - root - INFO - JD,https://item.jd.com/8031600.html共更新了0条,
+2019-07-08 17:30:02,237 - root - ERROR - JD(4298564)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:02,245 - root - INFO - JD,https://item.jd.com/4298564.html共更新了0条,
+2019-07-08 17:30:02,614 - root - ERROR - JD(100002501954)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:02,620 - root - INFO - JD,https://item.jd.com/100002501954.html共更新了0条,
+2019-07-08 17:30:03,127 - root - ERROR - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:03,137 - root - INFO - JD,https://item.jd.com/100001470134.html共更新了6条,
+2019-07-08 17:30:03,556 - root - ERROR - JD(34326476497)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:03,565 - root - INFO - JD,https://item.jd.com/34326476497.html共更新了0条,
+2019-07-08 17:30:04,020 - root - ERROR - JD(41014808466)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:04,028 - root - INFO - JD,https://item.jd.com/41014808466.html共更新了2条,
+2019-07-08 17:30:04,421 - root - ERROR - JD(2245024)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:04,429 - root - INFO - JD,https://item.jd.com/2245024.html共更新了1条,
+2019-07-08 17:30:04,843 - root - ERROR - JD(24818305875)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:04,850 - root - INFO - JD,https://item.jd.com/24818305875.html共更新了0条,
+2019-07-08 17:30:05,223 - root - ERROR - JD(46066831853)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:05,229 - root - INFO - JD,https://item.jd.com/46066831853.html共更新了0条,
+2019-07-08 17:30:18,030 - root - ERROR - JD(100001667527)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:18,038 - root - INFO - JD,https://item.jd.com/100001667527.html共更新了28条,
+2019-07-08 17:30:26,569 - root - ERROR - JD(100002361195)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\JD\jd_review.py", line 158, in save_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:30:26,577 - root - INFO - JD,https://item.jd.com/100002361195.html共更新了11条,
+2019-07-08 17:30:26,577 - root - INFO - JD,耗时25.471874237060547秒
+2019-07-08 17:31:00,073 - root - INFO - Tmall,528515320283共更新了1条,
+2019-07-08 17:31:35,688 - root - ERROR - tmall(565187422922)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:31:35,748 - root - INFO - Tmall,565187422922共更新了0条,
+2019-07-08 17:32:10,956 - root - ERROR - tmall(552634156539)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:32:11,020 - root - INFO - Tmall,552634156539共更新了0条,
+2019-07-08 17:32:46,813 - root - ERROR - tmall(580233296207)报错信息：第2条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:32:46,882 - root - INFO - Tmall,580233296207共更新了2条,
+2019-07-08 17:33:22,340 - root - INFO - Tmall,574870586003共更新了0条,
+2019-07-08 17:34:08,714 - root - ERROR - tmall(590865770191)报错信息：第20条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:34:08,789 - root - ERROR - tmall(590865770191)报错信息：第20条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:34:08,866 - root - ERROR - tmall(590865770191)报错信息：第20条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-08 17:34:08,928 - root - INFO - Tmall,590865770191共更新了20条,
+2019-07-08 17:34:09,024 - root - INFO - tmall_end,耗时222.4472372531891秒

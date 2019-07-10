@@ -1,0 +1,12 @@
+2019-07-01 20:51:28,881 - root - ERROR - utils  - 178 - tmall(590865770191)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\TMALL\tmall_review.py", line 204, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\TMALL\tmall_review.py", line 59, in enter_review
+    self.click_review()
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\TMALL\tmall_review.py", line 90, in click_review
+    EC.element_to_be_clickable((By.XPATH, "//div[@id='J_TabBarBox']//a[text()='累计评价 ']"))).click()
+  File "C:\Python36-32\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

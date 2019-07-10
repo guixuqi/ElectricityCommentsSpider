@@ -1,0 +1,95 @@
+2019-07-04 16:47:57,139 - root - ERROR - utils  - 161 - Amazon(B07N6NRS8Q)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f62d' in position 11: illegal multibyte sequence
+2019-07-04 16:47:58,219 - root - ERROR - utils  - 161 - Amazon(B07N6NRS8Q)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 11: illegal multibyte sequence
+2019-07-04 16:48:09,321 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2757' in position 6: illegal multibyte sequence
+2019-07-04 16:48:10,287 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 2: illegal multibyte sequence
+2019-07-04 16:48:17,939 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 16: illegal multibyte sequence
+2019-07-04 16:48:18,990 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 6: illegal multibyte sequence
+2019-07-04 16:48:26,144 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 2: illegal multibyte sequence
+2019-07-04 16:48:35,185 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f603' in position 12: illegal multibyte sequence
+2019-07-04 16:48:47,187 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u266a' in position 6: illegal multibyte sequence
+2019-07-04 16:49:01,312 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 3: illegal multibyte sequence
+2019-07-04 16:49:02,307 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u203c' in position 3: illegal multibyte sequence
+2019-07-04 16:49:03,428 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f644' in position 15: illegal multibyte sequence
+2019-07-04 16:49:05,450 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f60a' in position 19: illegal multibyte sequence
+2019-07-04 16:49:13,849 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 2: illegal multibyte sequence
+2019-07-04 16:49:18,533 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u203c' in position 5: illegal multibyte sequence
+2019-07-04 16:49:19,563 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\uff72' in position 8: illegal multibyte sequence
+2019-07-04 16:49:21,621 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 8: illegal multibyte sequence
+2019-07-04 16:49:25,225 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u25ef' in position 9: illegal multibyte sequence
+2019-07-04 16:49:26,631 - root - ERROR - utils  - 161 - Amazon(B075SSLKDB)报错信息：https://www.amazon.co.jp
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 119, in comment_data
+    print(comment_dict['comment_title'])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 4: illegal multibyte sequence

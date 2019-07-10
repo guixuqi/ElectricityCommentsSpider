@@ -1,0 +1,40 @@
+2019-07-03 15:02:41,964 - root - ERROR - utils  - 161 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/TMALL/new_tmall.py", line 86, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-03 15:02:42,039 - root - ERROR - utils  - 161 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/TMALL/new_tmall.py", line 86, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-03 15:02:42,117 - root - ERROR - utils  - 161 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/TMALL/new_tmall.py", line 86, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-03 15:02:42,188 - root - ERROR - utils  - 161 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/TMALL/new_tmall.py", line 86, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-03 15:02:42,254 - root - ERROR - utils  - 161 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/TMALL/new_tmall.py", line 86, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-03 15:02:42,327 - root - ERROR - utils  - 161 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/TMALL/new_tmall.py", line 86, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-03 15:02:42,415 - root - ERROR - utils  - 161 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/TMALL/new_tmall.py", line 86, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-03 15:02:42,497 - root - ERROR - utils  - 161 - tmall(565187422922)报错信息：第213条评论保存失败
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/TMALL/new_tmall.py", line 86, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)

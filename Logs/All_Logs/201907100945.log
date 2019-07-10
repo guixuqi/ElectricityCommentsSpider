@@ -1,0 +1,34 @@
+2019-07-10 09:45:07,988 - root - ERROR - Amazon(B07N6NRS8Q)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 94, in comment_data
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\u301c' in position 256: illegal multibyte sequence
+2019-07-10 09:45:07,999 - root - ERROR - Amazon(B07N6NRS8Q)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 94, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-10 09:45:08,008 - root - INFO - amazon,B07N6NRS8Q共更新了0条,
+2019-07-10 09:45:09,388 - root - ERROR - Amazon(B075SSLKDB)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 94, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-10 09:45:09,407 - root - ERROR - Amazon(B075SSLKDB)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 94, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-10 09:45:09,417 - root - ERROR - Amazon(B075SSLKDB)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 94, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-10 09:45:09,426 - root - INFO - amazon,B075SSLKDB共更新了2条,
+2019-07-10 09:45:12,652 - root - ERROR - Amazon(B07KNK8XCP)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 94, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-10 09:45:12,661 - root - INFO - amazon,B07KNK8XCP共更新了0条,
+2019-07-10 09:45:12,661 - root - INFO - Amazon_end,耗时8.980393886566162秒

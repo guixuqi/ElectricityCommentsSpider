@@ -1,0 +1,40 @@
+2019-06-28 09:52:45,541 - root - ERROR - utils  - 153 - JD(27115314210)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/JD/jd_review.py", line 73, in js2py
+    comm_dict = json.loads(comment[0])  # 将json对象obj解码为对应的字典dict
+IndexError: list index out of range
+2019-06-28 09:52:45,542 - root - ERROR - utils  - 153 - JD(27115314210)报错信息：无总评分数据
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/JD/jd_review.py", line 101, in conments
+    productCommentSummary = comm_dict['productCommentSummary']
+KeyError: 'productCommentSummary'
+2019-06-28 09:53:06,721 - root - ERROR - utils  - 153 - JD(8031600)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/JD/jd_review.py", line 73, in js2py
+    comm_dict = json.loads(comment[0])  # 将json对象obj解码为对应的字典dict
+IndexError: list index out of range
+2019-06-28 09:53:06,722 - root - ERROR - utils  - 153 - JD(8031600)报错信息：无总评分数据
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/JD/jd_review.py", line 101, in conments
+    productCommentSummary = comm_dict['productCommentSummary']
+KeyError: 'productCommentSummary'
+2019-06-28 09:53:11,883 - root - ERROR - utils  - 153 - JD(8031600)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/JD/jd_review.py", line 73, in js2py
+    comm_dict = json.loads(comment[0])  # 将json对象obj解码为对应的字典dict
+IndexError: list index out of range
+2019-06-28 09:53:11,883 - root - ERROR - utils  - 153 - JD(8031600)报错信息：评论列表获取失败
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/JD/jd_review.py", line 40, in getComment
+    commentSummary = comm_dict['comments']  # 得到包含评论的字典组成的列表
+KeyError: 'comments'
+2019-06-28 09:53:30,623 - root - ERROR - utils  - 153 - JD(100001470134)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/JD/jd_review.py", line 73, in js2py
+    comm_dict = json.loads(comment[0])  # 将json对象obj解码为对应的字典dict
+IndexError: list index out of range
+2019-06-28 09:53:30,624 - root - ERROR - utils  - 153 - JD(100001470134)报错信息：无总评分数据
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/JD/jd_review.py", line 101, in conments
+    productCommentSummary = comm_dict['productCommentSummary']
+KeyError: 'productCommentSummary'

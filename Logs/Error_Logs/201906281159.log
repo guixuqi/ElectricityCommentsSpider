@@ -1,0 +1,20 @@
+2019-06-28 11:59:28,457 - root - ERROR - utils  - 153 - tmall(574870586003)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/TMALL/tmall_review.py", line 190, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/TMALL/tmall_review.py", line 54, in enter_review
+    self.order_time()
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/TMALL/tmall_review.py", line 96, in order_time
+    element_artist[1].click()
+  File "C:\Python36-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not interactable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.18855 x86_64)
+

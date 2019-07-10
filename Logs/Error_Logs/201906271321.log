@@ -1,0 +1,100 @@
+2019-06-27 13:21:05,768 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,769 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,769 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,770 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,771 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,771 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,772 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,772 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,773 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:05,773 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,305 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,306 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,307 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,308 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,308 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,309 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,310 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,310 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,311 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'
+2019-06-27 13:21:10,311 - root - ERROR - utils  - 150 - Amazon(B01N3AJ0ID_UK)报错信息：https://www.amazon.co.uk
+Traceback (most recent call last):
+  File "C:/Users/BruceChen/Desktop/Demo/reviews/amazon/amazon_review.py", line 126, in comment_data
+    score = div.xpath(".//span[@class='a-icon-alt']/text()").split(" ")[0]
+AttributeError: 'list' object has no attribute 'split'

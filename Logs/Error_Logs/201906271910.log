@@ -1,0 +1,130 @@
+2019-06-27 19:13:14,603 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xdc' in position 268: illegal multibyte sequence
+2019-06-27 19:13:37,063 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 280: illegal multibyte sequence
+2019-06-27 19:13:39,689 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 262: illegal multibyte sequence
+2019-06-27 19:13:46,945 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 264: illegal multibyte sequence
+2019-06-27 19:13:49,748 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 281: illegal multibyte sequence
+2019-06-27 19:13:57,411 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 279: illegal multibyte sequence
+2019-06-27 19:14:08,738 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 278: illegal multibyte sequence
+2019-06-27 19:14:14,444 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xd6' in position 251: illegal multibyte sequence
+2019-06-27 19:14:20,582 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 302: illegal multibyte sequence
+2019-06-27 19:14:25,989 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 268: illegal multibyte sequence
+2019-06-27 19:14:26,254 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 280: illegal multibyte sequence
+2019-06-27 19:14:32,005 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 255: illegal multibyte sequence
+2019-06-27 19:14:32,147 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 262: illegal multibyte sequence
+2019-06-27 19:14:43,442 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 268: illegal multibyte sequence
+2019-06-27 19:14:54,910 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 264: illegal multibyte sequence
+2019-06-27 19:15:00,514 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\u201e' in position 258: illegal multibyte sequence
+2019-06-27 19:15:23,214 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 246: illegal multibyte sequence
+2019-06-27 19:15:23,308 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 264: illegal multibyte sequence
+2019-06-27 19:15:29,119 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 264: illegal multibyte sequence
+2019-06-27 19:15:40,213 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 284: illegal multibyte sequence
+2019-06-27 19:15:45,738 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 269: illegal multibyte sequence
+2019-06-27 19:15:45,876 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 288: illegal multibyte sequence
+2019-06-27 19:15:51,477 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 286: illegal multibyte sequence
+2019-06-27 19:15:57,530 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 267: illegal multibyte sequence
+2019-06-27 19:16:03,278 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 268: illegal multibyte sequence
+2019-06-27 19:16:31,731 - root - ERROR - utils  - 153 - Teuful(cage-p16427)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 284: illegal multibyte sequence

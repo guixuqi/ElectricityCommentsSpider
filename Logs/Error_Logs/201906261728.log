@@ -1,0 +1,5 @@
+2019-06-26 17:30:45,012 - root - ERROR - utils  - 147 - Amazon(B075YDD1P2_DE)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 156, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)

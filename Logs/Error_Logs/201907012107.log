@@ -1,0 +1,180 @@
+2019-07-01 21:07:49,903 - root - ERROR - utils  - 178 - JD(8031600)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:07:50,340 - root - ERROR - utils  - 178 - JD(100002501954)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,364 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,370 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,375 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,381 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,387 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,392 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,397 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,403 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,407 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,413 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,418 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,423 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,428 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,433 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,437 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,442 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,447 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,452 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,456 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,461 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,467 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,471 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,475 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,478 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,482 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,486 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,491 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,495 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,498 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,501 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,504 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,507 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,511 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束
+2019-07-01 21:08:02,514 - root - ERROR - utils  - 178 - JD(100001470134)报错信息：数据库保存/更新失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\JD\jd_review.py", line 171, in save_data
+    c.execute(sql)
+cx_Oracle.DatabaseError: ORA-01830: 日期格式图片在转换整个输入字符串之前结束

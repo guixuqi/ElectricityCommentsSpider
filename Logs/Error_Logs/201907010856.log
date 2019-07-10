@@ -1,0 +1,35 @@
+2019-07-01 08:57:11,226 - root - ERROR - utils  - 152 - BestBuy(6349969)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 161, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-01 08:57:11,236 - root - ERROR - utils  - 152 - BestBuy(6349969)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 161, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-01 08:57:11,565 - root - ERROR - utils  - 152 - BestBuy(6349969)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 161, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-01 08:57:11,572 - root - ERROR - utils  - 152 - BestBuy(6349969)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 161, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-01 08:57:11,578 - root - ERROR - utils  - 152 - BestBuy(6349969)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 161, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-01 08:57:11,583 - root - ERROR - utils  - 152 - BestBuy(6349969)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 161, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-07-01 08:57:11,589 - root - ERROR - utils  - 152 - BestBuy(6349969)报错信息：保存失败
+Traceback (most recent call last):
+  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 161, in save_db
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
