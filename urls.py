@@ -25,6 +25,10 @@ jd_url15 = "https://item.jd.com/4298564.html"  # Razer Kraken 7.1 Chroma
 bestBuy_url0 = "https://www.bestbuy.com/site/astro-gaming-a10-wired-stereo-gaming-headset-for-xbox-one-green-black/5892993.p?skuId=5892993&intl=nosplash"  # A10
 bestBuy_url1 = "https://www.bestbuy.com/site/astro-gaming-a50-wireless-dolby-7-1-surround-sound-gaming-headset-for-xbox-one-and-windows-black-and-green/5368400.p?skuId=5368400"
 bestBuy_url2 = "https://www.bestbuy.com/site/astro-gaming-astro-a50-base-station-rf-wireless-over-the-ear-headphones-black/6349969.p?skuId=6349969"  # A50
+# Razer Kraken 7.1 Chroma
+bestBuy_url3 = "https://www.bestbuy.com/site/razer-kraken-7-1-v2-wired-surround-sound-gaming-headset-for-pc-mac-ps4-black/6136302.p?skuId=6136302"
+# Razer Kraken Pro V2
+bestBuy_url4 = "https://www.bestbuy.com/site/razer-kraken-pro-v2-wired-stereo-gaming-headset-for-pc-mac-xbox-one-ps4-mobile-devices-black/6136303.p?skuId=6136303"
 
 # Amazon
 start_url0 = "https://www.amazon.com/Zolo-True-Wireless-Headphones-Technology-Calls-Upgraded/dp/B07GKHYVM8/ref=sxbs_sxwds-stvp"
@@ -32,7 +36,7 @@ start_url1 = "https://www.amazon.com/ASTRO-Gaming-A10-Headset-Black-Red/dp/B071S
 # Razer Nari Wireless
 start_url2 = "https://www.amazon.com/Razer-Nari-Wireless-Gel-Infused-Cushions/dp/B07G5RKF3W/ref=sr_1_1"
 # HyperX Cloud Alpha Gaming Headset
-start_url3 = "https://www.amazon.com/HyperX-Cloud-Stinger-Gaming-Headset/dp/B01L2ZRYVE/ref=sr_1_1_sspa"
+# start_url3 = "https://www.amazon.com/HyperX-Cloud-Stinger-Gaming-Headset/dp/B01L2ZRYVE/ref=sr_1_1_sspa"
 # HyperX Cloud II Gaming Headset
 start_url4 = "https://www.amazon.com/HyperX-Cloud-Gaming-Headset-KHX-HSCP-RD/dp/B00SAYCXWG/ref=sr_1_2"
 # Anker SoundBuds Life Wireless Lightweight Neckband Headphones
@@ -140,9 +144,11 @@ def jd_urls():
 
 def bestbuy_urls():
     bestbuy_urls = []
-    bestbuy_urls.append(bestBuy_url0)
-    bestbuy_urls.append(bestBuy_url1)
+    # bestbuy_urls.append(bestBuy_url0)
+    # bestbuy_urls.append(bestBuy_url1)
     bestbuy_urls.append(bestBuy_url2)
+    # bestbuy_urls.append(bestBuy_url3)
+    # bestbuy_urls.append(bestBuy_url4)
 
     return bestbuy_urls
 

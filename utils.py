@@ -22,34 +22,34 @@ def review_split(REVIEW_TEXT):
     length = len(REVIEW_TEXT)
     num = 4000
     if length < num:
-        REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
+        # REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
         REVIEW_TEXT1 = REVIEW_TEXT
-        REVIEW_TEXT2 = ""
-        REVIEW_TEXT3 = ""
-        REVIEW_TEXT4 = ""
-        REVIEW_TEXT5 = ""
+        REVIEW_TEXT2 = b""
+        REVIEW_TEXT3 = b""
+        REVIEW_TEXT4 = b""
+        REVIEW_TEXT5 = b""
     elif num * 2 > length > num:
-        REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
+        # REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
         REVIEW_TEXT1 = REVIEW_TEXT[0:num]
         REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
-        REVIEW_TEXT3 = ""
-        REVIEW_TEXT4 = ""
-        REVIEW_TEXT5 = ""
+        REVIEW_TEXT3 = b""
+        REVIEW_TEXT4 = b""
+        REVIEW_TEXT5 = b""
     elif num * 3 > length > num * 2:
-        REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
+        # REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
         REVIEW_TEXT1 = REVIEW_TEXT[0:num]
         REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
         REVIEW_TEXT3 = REVIEW_TEXT[num * 2:num * 3]
-        REVIEW_TEXT4 = ""
-        REVIEW_TEXT5 = ""
+        REVIEW_TEXT4 = b""
+        REVIEW_TEXT5 = b""
     else:
-        REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
+        # REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
         REVIEW_TEXT1 = REVIEW_TEXT[0:num]
         REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
         REVIEW_TEXT3 = REVIEW_TEXT[num * 2:num * 3]
         REVIEW_TEXT4 = REVIEW_TEXT[num * 3:num * 4]
         REVIEW_TEXT5 = REVIEW_TEXT[num * 4:num * 5]
-    return REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_TEXT5
+    return REVIEW_TEXT1.decode('gbk'), REVIEW_TEXT2.decode('gbk'), REVIEW_TEXT3.decode('gbk'), REVIEW_TEXT4.decode('gbk'), REVIEW_TEXT5.decode('gbk')
 
 # 从数据库取出所有urls,sku_id
 def get_urls():

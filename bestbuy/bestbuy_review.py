@@ -73,8 +73,10 @@ class BestBuyReview:
         # 评论内容(以评论星级分类(1-5)爬取)
         for number in reversed(range(1, 6)):
             self.comments_list = []
-            if number > 1:
+            if number < 5:
                 html = self.parse_url(number)
+            if html is False:
+                continue
             if self.comment_datas(html, number):
                 continue
 
@@ -144,14 +146,19 @@ class BestBuyReview:
                 continue
             # 保存数据库
             sql = save_review(REVIEW_ID, self.sku_id, number, comment_dict['comment_user'], comment_dict['comment_title'], REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, REVIEW_TEXT5, self.SKU_DETAIL_ID)
+            CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
+            sql0 = "update ECOMMERCE_REVIEW_P set REVIEW_STAR={}, REVIEW_NAME='{}', REVIEW_TITLE='{}', REVIEW_TEXT1='{}', REVIEW_TEXT2='{}', REVIEW_TEXT3='{}', REVIEW_DATE=to_date('{}','yyyy/MM/dd'), CREATE_TIME=to_date('{}','yyyy/MM/dd HH24:mi:ss'), SKU_DETAIL_ID='{}' where REVIEW_ID='{}'".format(number, comment_dict['comment_user'], comment_dict['comment_title'].replace("'", ""), REVIEW_TEXT1.replace("'", ""), REVIEW_TEXT2.replace("'", ""), REVIEW_TEXT3.replace("'", ""), REVIEW_DATE, CREATE_TIME, self.SKU_DETAIL_ID, REVIEW_ID)
             try:
                 c.execute(sql)
                 conn.commit()
                 self.comment_num += 1
             except Exception as e:
-                # print(e, "{}({})保存失败".format(self.name, self.sku_id))
-                logger(self.name, self.sku_id)
-                conn.rollback()
+                try:
+                    c.execute(sql0)
+                    conn.commit()
+                except Exception as e:
+                    print(e, "{}({})保存失败".format(self.name, self.sku_id))
+                    conn.rollback()
 
     def star_percent(self, html, num):
         rating_bars = html.xpath("//button[@data-track='Summary: Bar Graph: {} Star']".format(num))[0]
@@ -169,6 +176,7 @@ class BestBuyReview:
         if html_str is False:
             return
         self.get_content_list(html_str)
+        print("BestBuy,{}共更新了{}条,".format(self.sku_id, self.comment_num))
 
 
 def run(urls):

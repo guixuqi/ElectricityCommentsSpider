@@ -226,6 +226,7 @@ class TMALLReview:
                 time.sleep(5)
             # if i == 16:
             #     break
+        print("Tmall,{}共更新了{}条,".format(self.SKU_ID, self.num))
         log_info("Tmall,{}共更新了{}条,".format(self.SKU_ID, self.num))
         # 关闭浏览器
         self.driver.close()
@@ -243,8 +244,8 @@ def run(urls):
     # 关闭数据库
     close_db()
     end = time.time()
-    log_info("tmall_end,耗时%s秒" % (end - start))
     print("tmall_end,耗时%s秒" % (end - start))
+    log_info("tmall_end,耗时%s秒" % (end - start))
 
 
 if __name__ == '__main__':

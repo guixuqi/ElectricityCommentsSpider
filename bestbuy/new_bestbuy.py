@@ -1,5 +1,6 @@
 import os
 import sys
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, ""))
 import re
@@ -30,10 +31,10 @@ class BestBuyNewReview(BestBuyReview):
 
         for number in reversed(range(1, 6)):
             self.comments_list = []
-            if number > 1:
+            if number < 5:
                 html = self.parse_url(number)
-                if html is False:
-                    continue
+            if html is False:
+                continue
             star_num = "star_{}".format(number)
             if self.comment_datas(html, number):
                 continue
@@ -92,7 +93,9 @@ class BestBuyNewReview(BestBuyReview):
                 logger(self.name, self.sku_id, "提取内容失败")
                 continue
             # 保存数据库
-            sql = save_review(REVIEW_ID, self.sku_id, number, comment_dict['comment_user'], comment_dict['comment_title'], REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, REVIEW_TEXT5, self.SKU_DETAIL_ID)
+            sql = save_review(REVIEW_ID, self.sku_id, number, comment_dict['comment_user'],
+                              comment_dict['comment_title'], REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4,
+                              REVIEW_DATE, REVIEW_TEXT5, self.SKU_DETAIL_ID)
             try:
                 c.execute(sql)
                 conn.commit()
