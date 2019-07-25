@@ -29,6 +29,10 @@ bestBuy_url2 = "https://www.bestbuy.com/site/astro-gaming-astro-a50-base-station
 bestBuy_url3 = "https://www.bestbuy.com/site/razer-kraken-7-1-v2-wired-surround-sound-gaming-headset-for-pc-mac-ps4-black/6136302.p?skuId=6136302"
 # Razer Kraken Pro V2
 bestBuy_url4 = "https://www.bestbuy.com/site/razer-kraken-pro-v2-wired-stereo-gaming-headset-for-pc-mac-xbox-one-ps4-mobile-devices-black/6136303.p?skuId=6136303"
+# logitech-g-pro
+bestBuy_url5 = "https://www.bestbuy.com/site/logitech-g-pro-wired-stereo-gaming-headset-for-windows-black/6352842.p?skuId=6352842"
+bestBuy_url6 = "https://www.bestbuy.com/site/razer-kraken-wired-stereo-gaming-headset-black/6330450.p?skuId=6330450"
+
 
 # Amazon
 start_url0 = "https://www.amazon.com/Zolo-True-Wireless-Headphones-Technology-Calls-Upgraded/dp/B07GKHYVM8/ref=sxbs_sxwds-stvp"
@@ -79,6 +83,8 @@ start_url31 = "https://www.amazon.com/Anker-Qi-Certified-Compatible-Fast-Chargin
 # start_url25 = "https://www.amazon.de/Razer-Thresher-Xbox-Ohrumschließendes-undirektionales/dp/B075YDD1P2/ref=sr_1_1"
 # Razer Kraken Tournament  B07G4KD8WW
 start_url32 = "https://www.amazon.co.uk/Razer-Kraken-Tournament-Headset-Controller/dp/B07G4KD8WW/ref=sr_1_1"
+start_url37 = "https://www.amazon.co.uk/Razer-Headset-Drivers-Playstation-Earcups/dp/B0713QM36X"
+
 # # Corsair RGB   B0749BX1X3 与 B0749CW8X6评论相同
 start_url33 = "https://www.amazon.co.uk/Corsair-Customisable-Optimised-Unidirectional-Microphone/dp/B0749BX1X3/ref=sr_1_1"
 start_url22 = "https://www.amazon.de/Gaming-Headset-PS4Xbox-OneMobile-PlayStation/dp/B0711V7BV6/ref=sr_1_1"
@@ -94,13 +100,31 @@ start_url17 = "https://www.amazon.de/ZOLO-Bluetooth-Technologie-Schweißfest-unt
 # Anker TWS
 start_url18 = "https://www.amazon.co.uk/ZOLO-Total-Wireless-Technology-Sweatproof-Refurbished/dp/B075JBP2P7/ref=sr_1_1"
 start_url21 = "https://www.amazon.de/Corsair-WIRELESS-Headset-Wireless-schwarz/dp/B0749BX1X3/ref=sr_1_1"
+amazon_url34 = "https://www.amazon.co.uk/UNBREAKcable-Wireless-Charger-Qi-Certified-Charging-Black/dp/B07PN288W7/ref=sr_1_55"
+amazon_url35 = "https://www.amazon.de/UNBREAKcable-Kabelloses-Qi-zertifizierte-Ladestation-Unterst%C3%BCtzt/dp/B07PN288W7/ref=sr_1_89"
+amazon_url36 = "https://www.amazon.fr/UNBREAKcable-Wireless-Charger-Black-1Pack/dp/B07PN288W7/ref=sr_1_75"
 
 # B07N6NRS8Q
-amazon_url34 = "https://www.amazon.co.jp/Zero-Audio-TWZ-1000-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3/dp/B07N6NRS8Q/ref=sr_1_1"
+amazon_url38 = "https://www.amazon.co.jp/Zero-Audio-TWZ-1000-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3/dp/B07N6NRS8Q/ref=sr_1_1"
 # B075SSLKDB
-amazon_url35 = "https://www.amazon.co.jp/Liberty-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%80%90%E6%9C%80%E5%A4%A724%E6%99%82%E9%96%93%E9%9F%B3%E6%A5%BD%E5%86%8D%E7%94%9F-IPX5%E9%98%B2%E6%B0%B4%E8%A6%8F%E6%A0%BC%E3%80%91/dp/B075SSLKDB/ref=sr_1_1"
+amazon_url39 = "https://www.amazon.co.jp/Liberty-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%80%90%E6%9C%80%E5%A4%A724%E6%99%82%E9%96%93%E9%9F%B3%E6%A5%BD%E5%86%8D%E7%94%9F-IPX5%E9%98%B2%E6%B0%B4%E8%A6%8F%E6%A0%BC%E3%80%91/dp/B075SSLKDB/ref=sr_1_1"
 # B07KNK8XCP
-amazon_url36 = "https://www.amazon.co.jp/%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-Bluetooth%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89SoftBank-GLIDiC-SB-WS72-MRTW-BK/dp/B07KNK8XCP/ref=sr_1_1"
+amazon_url40 = "https://www.amazon.co.jp/%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-Bluetooth%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89SoftBank-GLIDiC-SB-WS72-MRTW-BK/dp/B07KNK8XCP/ref=sr_1_1"
+# 铁三角
+amazon_url41 = "https://www.amazon.co.jp/Audio-Technica-%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%86%E3%82%AF%E3%83%8B%E3%82%AB-ATH-CKS5TW-Bluetooth%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%EF%BC%88%E3%83%96%E3%83%AB%E3%83%BC%EF%BC%89audio-technica/dp/B07T8SSPCV/ref=sr_1_4_sspa"
+
+
+# yodobashi  31
+yodo_url1 = "https://www.yodobashi.com/product/100000001004516643/"  # 黑色
+
+# biccamera  32
+bicc_url1 = "https://www.biccamera.com/bc/item/6904415/"  # 黑色
+
+# e-earphone  34
+e_ear_url1 = "https://www.e-earphone.jp/shopdetail/000000245037/"  # 黑色
+
+# Kakaku  33
+kakaku_url1 = "https://kakaku.com/item/J0000030659/?lid=20190108pricemenu_hot"  # 黑色
 
 # Tmall
 tmall_url1 = "https://detail.tmall.com/item.htm?id=590865770191"  # KUGOU X5
@@ -144,11 +168,12 @@ def jd_urls():
 
 def bestbuy_urls():
     bestbuy_urls = []
-    # bestbuy_urls.append(bestBuy_url0)
-    # bestbuy_urls.append(bestBuy_url1)
+    bestbuy_urls.append(bestBuy_url0)
+    bestbuy_urls.append(bestBuy_url1)
     bestbuy_urls.append(bestBuy_url2)
-    # bestbuy_urls.append(bestBuy_url3)
-    # bestbuy_urls.append(bestBuy_url4)
+    bestbuy_urls.append(bestBuy_url3)
+    bestbuy_urls.append(bestBuy_url4)
+    bestbuy_urls.append(bestBuy_url5)
 
     return bestbuy_urls
 
@@ -187,11 +212,36 @@ def amazon_urls():
     # url_list.append(start_url31)
     # url_list.append(start_url32)
     # url_list.append(start_url33)
-    url_list.append(amazon_url34)
-    url_list.append(amazon_url35)
-    url_list.append(amazon_url36)
+    # url_list.append(amazon_url34)
+    # url_list.append(amazon_url35)
+    # url_list.append(amazon_url36)
+    # url_list.append(start_url37)
+    url_list.append(amazon_url38)
+    url_list.append(amazon_url39)
+    url_list.append(amazon_url40)
+    url_list.append(amazon_url41)
 
     return url_list
+
+def yodo_urls():
+    url_lists = []
+    url_lists.append(yodo_url1)
+    return url_lists
+
+def bicc_urls():
+    url_lists = []
+    url_lists.append(bicc_url1)
+    return url_lists
+
+def e_ear_urls():
+    url_lists = []
+    url_lists.append(e_ear_url1)
+    return url_lists
+
+def kakaku_urls():
+    url_lists = []
+    url_lists.append(kakaku_url1)
+    return url_lists
 
 # 数据库插入urls
 # def insert(urls, role):

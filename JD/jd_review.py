@@ -6,8 +6,7 @@ from datetime import datetime
 import requests
 import re, json
 import time
-from utils import review_split, save_json, get_ua, save_review, c, conn, save_score, log_info, logger as jd_log, \
-    SKU_DETAIL_ID, max_date
+from utils import review_split, save_json, get_ua, save_review, c, conn, save_score, log_info, logger as jd_log, SKU_DETAIL_ID, max_date
 from retrying import retry
 from utils import close_db
 
@@ -138,7 +137,7 @@ class JDReview:
     def save_data(self):
         # print(len(commentList))
         for comment in self.commentList:
-            REVIEW_ID = comment["REVIEW_ID"]
+            REVIEW_ID = self.SKU_DETAIL_ID + "_" + comment["REVIEW_ID"]
             SKU_ID = comment["SKU_ID"]
             REVIEW_STAR = comment["score"]
             REVIEW_NAME = comment["nickname"]

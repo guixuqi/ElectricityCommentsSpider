@@ -1,5 +1,0 @@
-2019-07-01 18:02:17,964 - root - ERROR - utils  - 152 - Amazon(B075JBP2P7)报错信息：保存失败
-Traceback (most recent call last):
-  File "C:\Users\BruceChen\Desktop\Demo\reviews\amazon\amazon_review.py", line 70, in get_score
-    c.execute(sql_star)
-cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)

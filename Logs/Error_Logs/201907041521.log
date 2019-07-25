@@ -1,5 +1,0 @@
-2019-07-04 15:21:50,247 - root - ERROR - utils  - 161 - Amazon(B07N6NRS8Q)报错信息：无总评分数据
-Traceback (most recent call last):
-  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/amazon_review.py", line 57, in get_score
-    score = float(score)
-ValueError: could not convert string to float: '5つ星のうち3.7'

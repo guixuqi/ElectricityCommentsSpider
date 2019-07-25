@@ -8,8 +8,7 @@ from datetime import datetime
 import time
 import requests
 from lxml import etree
-from utils import get_ua, save_review, review_split, save_score, close_db, logger, log_info, c, conn, SKU_DETAIL_ID, \
-    max_date
+from utils import get_ua, save_review, review_split, save_score, close_db, logger, log_info, c, conn, SKU_DETAIL_ID, max_date
 from retrying import retry
 import locale
 
@@ -19,21 +18,20 @@ class AmazonReview:
     def __init__(self):
         self.name = "Amazon"
         self.amazon_url = ""
-        self.headers = {
-            'User-Agent': get_ua()}
+        self.headers = {'User-Agent': get_ua()}
         self.dict = {}
         self.comments_list = []
         self.comment_num = 0
         self.review_num = 0
         self.SKU_ID = ""
         self.ECOMMERCE_CODE = ""
-        self.SKU_DETAIL_ID = ""
-        self.max_date = None
+        self.SKU_DETAIL_ID = "00000"
+        self.max_d = None
 
     @retry(stop_max_attempt_number=5)
     def parse_url(self, url):
         kw = {"filterByLanguage": "en_US", "sortBy": "recent"}
-        if re.search(r".de", url):
+        if re.search(r".de", url) or re.search(r".fr", url):
             kw = {"sortBy": "recent"}
         elif re.search(r".co.jp", url):
             kw = {"sortBy": "recent", "language": "zh_CN"}
@@ -111,10 +109,7 @@ class AmazonReview:
             try:
                 # 评论ID
                 if len(div.xpath("./@id")) > 0:
-                    if self.SKU_ID == "B0749BX1X3":
-                        REVIEW_ID = div.xpath("./@id")[0] + "_UK"
-                    else:
-                        REVIEW_ID = div.xpath("./@id")[0]
+                    REVIEW_ID = self.SKU_DETAIL_ID + "_" + div.xpath("./@id")[0]
                 else:
                     continue
                 # 评论标题
@@ -143,6 +138,11 @@ class AmazonReview:
                         # 设置本地时间格式为德语
                         locale.setlocale(locale.LC_ALL, 'de_DE')
                         re_date = datetime.strptime(dataStr, "%B/%d/%Y")
+                    elif re.search(r".fr", self.amazon_url):
+                        dataStr = timeList[1] + "/" + timeList[0].replace(".", "") + "/" + timeList[2]
+                        # 设置本地时间格式为法语
+                        locale.setlocale(locale.LC_ALL, 'fr_FR')
+                        re_date = datetime.strptime(dataStr, "%B/%d/%Y")
                     elif re.search(r".co.jp", self.amazon_url):
                         dataStr = re.search(r"(\d+)\D+(\d+)\D+(\d+)", flag)
                         dataStr = dataStr.group(1) + "/" + dataStr.group(2) + "/" + dataStr.group(3)
@@ -150,13 +150,6 @@ class AmazonReview:
                         # print(dataStr)
                     else:
                         return True
-                    # try:
-                    #     locale.setlocale(locale.LC_ALL, 'en_US')
-                    #     re_date = datetime.strptime(dataStr, "%B/%d/%Y")
-                    # except:
-                    #     # 设置本地时间格式为德语
-                    #     locale.setlocale(locale.LC_ALL, 'de_DE')
-                    #     re_date = datetime.strptime(dataStr, "%B/%d/%Y")
                     locale.setlocale(locale.LC_ALL, "C")
                     REVIEW_DATE = re_date.strftime('%Y/%m/%d')
                 else:
@@ -187,7 +180,7 @@ class AmazonReview:
             sql = save_review(REVIEW_ID, self.SKU_ID, score, comment_dict['comment_user'], comment_dict['comment_title'], REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, REVIEW_TEXT5, self.SKU_DETAIL_ID)
             # 更新
             CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
-            sql0 = "update ECOMMERCE_REVIEW_P set REVIEW_STAR={}, REVIEW_NAME='{}', REVIEW_TITLE='{}', REVIEW_TEXT1='{}', REVIEW_TEXT2='{}', REVIEW_TEXT3='{}', REVIEW_DATE=to_date('{}','yyyy/MM/dd'), CREATE_TIME=to_date('{}','yyyy/MM/dd HH24:mi:ss'), SKU_DETAIL_ID='{}' where REVIEW_ID='{}'".format(score, comment_dict['comment_user'], comment_dict['comment_title'].replace("'", ""), REVIEW_TEXT1.replace("'", ""), REVIEW_TEXT2.replace("'", ""), REVIEW_TEXT3.replace("'", ""), REVIEW_DATE, CREATE_TIME, self.SKU_DETAIL_ID, REVIEW_ID)
+            sql0 = "update ECOMMERCE_REVIEW_P set SKU_ID='{}', REVIEW_STAR={}, REVIEW_NAME='{}', REVIEW_TITLE='{}', REVIEW_TEXT1='{}', REVIEW_TEXT2='{}', REVIEW_TEXT3='{}', REVIEW_DATE=to_date('{}','yyyy/MM/dd'), CREATE_TIME=to_date('{}','yyyy/MM/dd HH24:mi:ss'), SKU_DETAIL_ID='{}' where REVIEW_ID='{}'".format(self.SKU_ID, score, comment_dict['comment_user'], comment_dict['comment_title'].replace("'", ""), REVIEW_TEXT1.replace("'", ""), REVIEW_TEXT2.replace("'", ""), REVIEW_TEXT3.replace("'", ""), REVIEW_DATE, CREATE_TIME, self.SKU_DETAIL_ID, REVIEW_ID)
             try:
                 c.execute(sql)
                 conn.commit()
@@ -198,6 +191,7 @@ class AmazonReview:
                     conn.commit()
                 except Exception as e:
                     print(e, "{}({})保存失败".format(self.name, self.SKU_ID))
+                    logger(self.name, self.SKU_ID, "保存失败")
                     conn.rollback()
 
     def run(self, start_url):
@@ -207,24 +201,22 @@ class AmazonReview:
             # print(e, "url格式不对")
             logger(self.name, start_url, "url格式不对")
             return []
-        # 查询数据库评论最晚日期
-        self.max_date = max_date(self.SKU_ID)
         # 判断美国,英国,德国网站
         if re.search(r".com", start_url):
             self.amazon_url = "https://www.amazon.com"
             self.ECOMMERCE_CODE = "1"
-            # self.SKU_ID = SKU_ID + "_US"
         elif re.search(r".co.uk", start_url):
             self.amazon_url = "https://www.amazon.co.uk"
             self.ECOMMERCE_CODE = "2"
-            # self.SKU_ID = SKU_ID + "_UK"
         elif re.search(r".de", start_url):
             self.amazon_url = "https://www.amazon.de"
             self.ECOMMERCE_CODE = "4"
-            # self.SKU_ID = SKU_ID + "_DE"
         elif re.search(r".co.jp", start_url):
             self.amazon_url = "https://www.amazon.co.jp"
             self.ECOMMERCE_CODE = "3"
+        elif re.search(r".fr", start_url):
+            self.amazon_url = "https://www.amazon.fr"
+            self.ECOMMERCE_CODE = "5"
         else:
             log_info("暂不支持爬取此类网站数据")
             return True
@@ -258,8 +250,8 @@ def run(urls):
     # 关闭数据库
     # close_db()
     end = time.time()
-    print('耗时%s秒' % (end - start))
-    log_info('耗时%s秒' % (end - start))
+    print('amazon_end,耗时%s秒' % (end - start))
+    log_info('amazon_end,耗时%s秒' % (end - start))
 
 
 if __name__ == '__main__':

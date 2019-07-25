@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 from Logs.log import log1
 from amazon.amazon_review import AmazonReview
-from utils import update_score, save_review, review_split, close_db, newReview, log_info, logger, c, conn, SKU_DETAIL_ID
+from utils import update_score, save_review, review_split, close_db, newReview, log_info, logger, c, conn,SKU_DETAIL_ID,max_date
 import locale
 
 
@@ -40,11 +40,15 @@ class AmazonNewReview(AmazonReview):
                         # 设置本地时间格式为德语
                         locale.setlocale(locale.LC_ALL, 'de_DE')
                         re_date = datetime.strptime(dataStr, "%B/%d/%Y")
+                    elif re.search(r".fr", self.amazon_url):
+                        dataStr = timeList[1] + "/" + timeList[0].replace(".", "") + "/" + timeList[2]
+                        # 设置本地时间格式为法语
+                        locale.setlocale(locale.LC_ALL, 'fr_FR')
+                        re_date = datetime.strptime(dataStr, "%B/%d/%Y")
                     elif re.search(r".co.jp", self.amazon_url):
                         dataStr = re.search(r"(\d+)\D+(\d+)\D+(\d+)", flag)
                         dataStr = dataStr.group(1) + "/" + dataStr.group(2) + "/" + dataStr.group(3)
                         re_date = datetime.strptime(dataStr, "%Y/%m/%d")
-                        # print(dataStr)
                     else:
                         return True
                     locale.setlocale(locale.LC_ALL, "C")
@@ -53,7 +57,8 @@ class AmazonNewReview(AmazonReview):
                     # print(re_date)
                     # if newReview(re_date):
                     #     return True
-                    if newReview(self.max_date, re_date):
+                    # 查询数据库评论最晚日期
+                    if newReview(self.max_d, re_date):
                         n += 1
                         if n < 3:
                             continue
@@ -63,10 +68,7 @@ class AmazonNewReview(AmazonReview):
                     REVIEW_DATE = datetime.now().strftime('%Y/%m/%d')
                 # 评论ID
                 if len(div.xpath("./@id")) > 0:
-                    if self.SKU_ID == "B0749BX1X3":
-                        REVIEW_ID = div.xpath("./@id")[0] + "_UK"
-                    else:
-                        REVIEW_ID = div.xpath("./@id")[0]
+                    REVIEW_ID = self.SKU_DETAIL_ID + "_" + div.xpath("./@id")[0]
                 else:
                     continue
                 # 评论星级
@@ -114,6 +116,7 @@ class AmazonNewReview(AmazonReview):
         if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
             return True
         self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        self.max_d = max_date(self.SKU_DETAIL_ID)
         update_score(score, self.SKU_ID, self.name, self.SKU_DETAIL_ID)
 
 

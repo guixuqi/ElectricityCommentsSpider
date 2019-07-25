@@ -1,5 +1,0 @@
-2019-06-28 08:39:06,160 - root - ERROR - utils  - 153 - BestBuy(5368400)报错信息：保存失败
-Traceback (most recent call last):
-  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
-    c.execute(sql)
-cx_Oracle.DatabaseError: ORA-01704: 字符串文字太长

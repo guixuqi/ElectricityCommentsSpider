@@ -28,19 +28,18 @@ class BestBuyNewReview(BestBuyReview):
             return True
         self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
         update_score(score, self.sku_id, self.name, self.SKU_DETAIL_ID)
-
         for number in reversed(range(1, 6)):
             self.comments_list = []
             if number < 5:
-                html = self.parse_url(number)
-            if html is False:
-                continue
+                try:
+                    html = self.parse_url(number)
+                except:
+                    print("{}星级{}请求失败".format(self.sku_id, number))
+                    continue
             star_num = "star_{}".format(number)
             if self.comment_datas(html, number):
                 continue
             self.dict[star_num] = self.comments_list
-        # print("BestBuy,{}共更新了{}".format(self.sku_id, self.comment_num))
-        log_info("BestBuy,{}共更新了{}条".format(self.sku_id, self.comment_num))
 
     def comment_data(self, html, number):
         comments_lis = html.xpath("//ul[@class='reviews-list']/li")
@@ -83,7 +82,7 @@ class BestBuyNewReview(BestBuyReview):
                 self.comments_list.append(comment_dict)
                 # 评论ID
                 REVIEW_ID = li.xpath(".//h3[@class='ugc-review-title c-section-title heading-5 v-fw-medium  ']/@id")
-                REVIEW_ID = re.match(r"review-id-(.*)", REVIEW_ID[0]).group(1)
+                REVIEW_ID = self.SKU_DETAIL_ID + "_" + re.match(r"review-id-(.*)", REVIEW_ID[0]).group(1)
                 REVIEW_TEXT = comment_dict['comment_content']
                 # 评论内容分拆
                 REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_TEXT5 = review_split(REVIEW_TEXT)
@@ -117,7 +116,7 @@ def main(urls):
         best.run(url)
     end = time.time()
     log_info("BestBuy_end,耗时%s秒" % (end - start))
-    # print('耗时%s秒' % (end - start))
+    print("BestBuy_end,耗时%s秒" % (end - start))
 
 
 # 定时运行

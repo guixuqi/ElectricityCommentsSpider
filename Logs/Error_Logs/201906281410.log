@@ -1,5 +1,0 @@
-2019-06-28 14:11:12,733 - root - ERROR - utils  - 153 - tmall(574870586003)报错信息：评论总评分保存失败
-Traceback (most recent call last):
-  File "C:/Users/BruceChen/Desktop/Demo/reviews/TMALL/tmall_review.py", line 159, in save
-    c.execute(sql)
-cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)

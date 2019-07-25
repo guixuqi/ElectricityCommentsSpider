@@ -1,5 +1,0 @@
-2019-06-27 19:58:55,199 - root - ERROR - utils  - 153 - BestBuy(5892993)报错信息：保存失败
-Traceback (most recent call last):
-  File "C:\Users\BruceChen\Desktop\Demo\reviews\utils.py", line 162, in save_db
-    c.execute(sql)
-cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)

@@ -2,6 +2,16 @@ import json
 from datetime import datetime
 import cx_Oracle
 from Logs.log import log1
+import os
+import re
+
+
+# 配置抓取日期(是否抓取数据库最晚日期当天的评论:1=否,0=是)
+review_days = 0
+# 更新评论爬取
+def newReview(max_date, re_date):
+    if not max_date or (re_date - max_date).days < review_days:
+        return True
 
 
 # 数据库配置
@@ -10,67 +20,32 @@ dsnStr = cx_Oracle.makedsn("192.168.110.205", 1521, "EIP")
 conn = cx_Oracle.connect("EIP", "EIP", dsnStr)
 c = conn.cursor()
 
-# 配置抓取日期
-review_days = 1
 
 # selenium定位标签等待时间
 wait = 30
 
-# 评论内容分拆
-def review_split(REVIEW_TEXT):
-    REVIEW_TEXT = REVIEW_TEXT.encode('gbk', 'ignore')
-    length = len(REVIEW_TEXT)
-    num = 4000
-    if length < num:
-        # REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
-        REVIEW_TEXT1 = REVIEW_TEXT
-        REVIEW_TEXT2 = b""
-        REVIEW_TEXT3 = b""
-        REVIEW_TEXT4 = b""
-        REVIEW_TEXT5 = b""
-    elif num * 2 > length > num:
-        # REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
-        REVIEW_TEXT1 = REVIEW_TEXT[0:num]
-        REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
-        REVIEW_TEXT3 = b""
-        REVIEW_TEXT4 = b""
-        REVIEW_TEXT5 = b""
-    elif num * 3 > length > num * 2:
-        # REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
-        REVIEW_TEXT1 = REVIEW_TEXT[0:num]
-        REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
-        REVIEW_TEXT3 = REVIEW_TEXT[num * 2:num * 3]
-        REVIEW_TEXT4 = b""
-        REVIEW_TEXT5 = b""
-    else:
-        # REVIEW_TEXT = REVIEW_TEXT.decode('gbk')
-        REVIEW_TEXT1 = REVIEW_TEXT[0:num]
-        REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
-        REVIEW_TEXT3 = REVIEW_TEXT[num * 2:num * 3]
-        REVIEW_TEXT4 = REVIEW_TEXT[num * 3:num * 4]
-        REVIEW_TEXT5 = REVIEW_TEXT[num * 4:num * 5]
-    return REVIEW_TEXT1.decode('gbk'), REVIEW_TEXT2.decode('gbk'), REVIEW_TEXT3.decode('gbk'), REVIEW_TEXT4.decode('gbk'), REVIEW_TEXT5.decode('gbk')
 
-# 从数据库取出所有urls,sku_id
+# 从数据库取出所有urls,sku_detail_id
 def get_urls():
-    sql = "select REVIEW_URL,SKU_CODE from ECOMMERCE_SKU_DETAIL"
+    # sql = "select REVIEW_URL,SKU_ID from ECOMMERCE_SKU_DETAIL where not REGEXP_LIKE(ECOMMERCE_CODE, '^3.*')"
+    sql = "select REVIEW_URL,SKU_ID from ECOMMERCE_SKU_DETAIL where not (ECOMMERCE_CODE=31 or ECOMMERCE_CODE=3)"
     results = c.execute(sql).fetchall()  # [(),()]
     return results
 
+
 # 以SKU_ID和ECOMMERCE_CODE联合查询ECOMMERCE_SKU_DETAIL表SKU_DETAIL_ID的值
 def SKU_DETAIL_ID(SKU_ID, ECOMMERCE_CODE):
-    sql_detail_id = "select SKU_ID from ECOMMERCE_SKU_DETAIL p where SKU_CODE='{}' and ECOMMERCE_CODE='{}'".format(
-        SKU_ID, ECOMMERCE_CODE)
+    sql_detail_id = "select SKU_ID from ECOMMERCE_SKU_DETAIL p where SKU_CODE='{}' and ECOMMERCE_CODE='{}'".format(SKU_ID, ECOMMERCE_CODE)
     try:
         return c.execute(sql_detail_id).fetchone()[0]
     except Exception as e:
         print(e, "查询不到SKU_DETAIL_ID")
-        return False
+        return ""
 
 
 # 查询总评论数量
-def select_count(SKU_ID):
-    sql_count = "select count(REVIEW_ID) from ECOMMERCE_REVIEW_P p where sku_id='{}'".format(SKU_ID)
+def select_count(sku_detail_id):
+    sql_count = "select count(REVIEW_ID) from ECOMMERCE_REVIEW_P p where sku_detail_id='{}'".format(sku_detail_id)
     count = c.execute(sql_count).fetchone()[0]
     return count
 
@@ -105,6 +80,7 @@ def save_score(SKU_ID, score, name, SKU_DETAIL_ID):
         print(e, "{}({})保存失败".format(name, SKU_ID))
         logger(name, SKU_ID, "保存失败")
         conn.rollback()
+        return True
 
 
 # 保存评论总评分(更新)
@@ -121,21 +97,10 @@ def update_score(score, SKU_ID, name, SKU_DETAIL_ID):
 
 
 # 查询数据库评论最晚评论日期
-def max_date(sku_id):
-    sql = "select max(review_date) from ECOMMERCE_REVIEW_P where sku_id='{}'".format(sku_id)
+def max_date(sku_detail_id):
+    sql = "select max(review_date) from ECOMMERCE_REVIEW_P where sku_detail_id='{}'".format(sku_detail_id)
     max_date = c.execute(sql).fetchone()[0]
     return max_date
-
-
-# 更新评论爬取
-def newReview(max_date, re_date):
-    if not max_date or (re_date - max_date).days < 0:
-        return True
-
-# def newReview(re_date):
-#     now = datetime.now()
-#     if (now - re_date).days > 10:
-#         return True
 
 
 # 随机UA
@@ -156,6 +121,38 @@ def get_ua():
                   )
     # print(ua)
     return ua
+
+
+# 评论内容分拆
+def review_split(REVIEW_TEXT):
+    REVIEW_TEXT = REVIEW_TEXT.encode('gbk', 'ignore')
+    length = len(REVIEW_TEXT)
+    num = 4000
+    if length < num:
+        REVIEW_TEXT1 = REVIEW_TEXT
+        REVIEW_TEXT2 = b""
+        REVIEW_TEXT3 = b""
+        REVIEW_TEXT4 = b""
+        REVIEW_TEXT5 = b""
+    elif num * 2 > length > num:
+        REVIEW_TEXT1 = REVIEW_TEXT[0:num]
+        REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
+        REVIEW_TEXT3 = b""
+        REVIEW_TEXT4 = b""
+        REVIEW_TEXT5 = b""
+    elif num * 3 > length > num * 2:
+        REVIEW_TEXT1 = REVIEW_TEXT[0:num]
+        REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
+        REVIEW_TEXT3 = REVIEW_TEXT[num * 2:num * 3]
+        REVIEW_TEXT4 = b""
+        REVIEW_TEXT5 = b""
+    else:
+        REVIEW_TEXT1 = REVIEW_TEXT[0:num]
+        REVIEW_TEXT2 = REVIEW_TEXT[num:num * 2]
+        REVIEW_TEXT3 = REVIEW_TEXT[num * 2:num * 3]
+        REVIEW_TEXT4 = REVIEW_TEXT[num * 3:num * 4]
+        REVIEW_TEXT5 = REVIEW_TEXT[num * 4:num * 5]
+    return REVIEW_TEXT1.decode('gbk'), REVIEW_TEXT2.decode('gbk'), REVIEW_TEXT3.decode('gbk'), REVIEW_TEXT4.decode('gbk'), REVIEW_TEXT5.decode('gbk')
 
 
 # 以json存本地
@@ -189,3 +186,18 @@ def close_db():
     c.close()
     conn.close()
 
+# 删除过期日志
+def remove_log():
+    logs = "C:\\Users\\hhh\\Desktop\\Demo\\reviews\\Logs\\All_Logs"
+    # logs = "C:\\Users\\hhh\\Desktop\\Demo\\reviews\\Logs\\Error_Logs"
+    fs = os.listdir(logs)
+
+    for f in fs:
+        if re.search(r".log", f):
+            ff = os.path.join(logs, f)
+            # print(ff)
+            os.remove(ff)
+
+
+if __name__ == '__main__':
+    remove_log()

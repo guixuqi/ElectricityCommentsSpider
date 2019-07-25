@@ -2,9 +2,8 @@ import time
 from datetime import datetime
 from selenium.webdriver.support.ui import WebDriverWait
 from xpinyin import Pinyin
-
 from TMALL.tmall_review import TMALLReview
-from utils import review_split, c, logger, log_info, conn, review_days, SKU_DETAIL_ID, update_score, newReview
+from utils import review_split, c, logger, log_info, conn, review_days, SKU_DETAIL_ID, update_score, newReview, max_date
 
 
 class TMALLNewReview(TMALLReview):
@@ -65,7 +64,7 @@ class TMALLNewReview(TMALLReview):
                 logger(self.name, self.SKU_ID, "第{}条提取内容失败".format(self.num))
                 continue
             # 生成评论ID
-            REVIEW_ID = REVIEW_DATE.replace("/", "") + str(len(REVIEW_TEXT)) + str(Pinyin().get_pinyin(REVIEW_NAME.replace("*", "")).replace("-", ""))
+            REVIEW_ID = self.SKU_DETAIL_ID + "_" + REVIEW_DATE.replace("/", "") + str(len(REVIEW_TEXT)) + str(Pinyin().get_pinyin(REVIEW_NAME.replace("*", "")).replace("-", ""))
             # print(REVIEW_ID)
             CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
             # 保存ECOMMERCE_REVIEW_P数据库
@@ -89,6 +88,8 @@ class TMALLNewReview(TMALLReview):
         if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
             return True
         self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        # 查询数据库评论最晚日期
+        self.max_date = max_date(self.SKU_DETAIL_ID)
         update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID)
 
 
@@ -101,6 +102,7 @@ def main(url_list):
         today = TMALLNewReview(url)
         today.run()
     end = time.time()
+    print("tmall_end,耗时%s秒" % (end - start))
     log_info("tmall_end,耗时%s秒" % (end - start))
 
 

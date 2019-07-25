@@ -8,8 +8,7 @@ import time
 import requests
 from lxml import etree
 from retrying import retry
-from utils import close_db, get_ua, review_split, save_score, save_review, logger, log_info, SKU_DETAIL_ID, c, conn, \
-    max_date
+from utils import close_db, get_ua, review_split, save_score, save_review, logger, log_info, SKU_DETAIL_ID, c, conn, max_date
 
 
 class BestBuyReview:
@@ -32,24 +31,18 @@ class BestBuyReview:
         self.url = self.url.replace(s1.group(1), "")
         # SKU_ID
         self.sku_id = re.search(r"/site/reviews/.*/(\d+)", self.url).group(1)
-        # 查询数据库评论最晚日期
-        self.max_date = max_date(self.sku_id)
 
     @retry(stop_max_attempt_number=5)
     def parse_url(self, number=5):
         kw = {"page": 1, "rating": number, "sort": "MOST_RECENT"}
-        try:
-            resp = requests.get(self.url, headers=self.header, params=kw, timeout=60)
-            # print(resp.url)
-            html = etree.HTML(resp.content.decode())
-        except:
-            logger(self.name, self.url, "请求失败")
-            html = False
+        resp = requests.get(self.url, headers=self.header, params=kw, timeout=60)
+        # print(resp.url)
+        html = etree.HTML(resp.content.decode())
         return html
 
     @retry(stop_max_attempt_number=5)
     def parse_next_url(self, next_url):
-        next_resp = requests.get(next_url, headers=self.header, timeout=10)
+        next_resp = requests.get(next_url, headers=self.header, timeout=60)
         next_html = etree.HTML(next_resp.content.decode())
         return next_html
 
@@ -68,15 +61,19 @@ class BestBuyReview:
         if not SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE):
             return True
         self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
+        # 查询数据库评论最晚日期
+        self.max_date = max_date(self.SKU_DETAIL_ID)
         # 保存总评分
         save_score(self.sku_id, score, self.name, self.SKU_DETAIL_ID)
         # 评论内容(以评论星级分类(1-5)爬取)
         for number in reversed(range(1, 6)):
             self.comments_list = []
             if number < 5:
-                html = self.parse_url(number)
-            if html is False:
-                continue
+               try:
+                   html = self.parse_url(number)
+               except:
+                   print("{}星级{}请求失败".format(self.sku_id, number))
+                   continue
             if self.comment_datas(html, number):
                 continue
 
@@ -99,7 +96,8 @@ class BestBuyReview:
             if self.comment_data(next_html, number):
                 return True
             next_url = self.next_url(next_html)
-        log_info("BestBuy,{}共更新了{}条,".format(self.sku_id, self.comment_num))
+        print("BestBuy,{}共抓取了{}条,".format(self.sku_id, self.comment_num))
+        log_info("BestBuy,{}共抓取了{}条,".format(self.sku_id, self.comment_num))
 
     def comment_data(self, html, number):
         comments_lis = html.xpath("//ul[@class='reviews-list']/li")
@@ -135,7 +133,7 @@ class BestBuyReview:
                 self.comments_list.append(comment_dict)
                 # 评论ID
                 REVIEW_ID = li.xpath(".//h3[@class='ugc-review-title c-section-title heading-5 v-fw-medium  ']/@id")
-                REVIEW_ID = re.match(r"review-id-(.*)", REVIEW_ID[0]).group(1)
+                REVIEW_ID = self.SKU_DETAIL_ID + "_" + re.match(r"review-id-(.*)", REVIEW_ID[0]).group(1)
                 REVIEW_TEXT = comment_dict['comment_content']
                 # 评论内容分拆
                 REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_TEXT5 = review_split(REVIEW_TEXT)
@@ -172,11 +170,15 @@ class BestBuyReview:
         except Exception as e:
             logger(self.name, self.sku_id, "url格式不符合要求")
             return
-        html_str = self.parse_url()
-        if html_str is False:
+        try:
+            html_str = self.parse_url()
+        except:
+            print("{}请求失败".format(self.sku_id))
             return
         self.get_content_list(html_str)
         print("BestBuy,{}共更新了{}条,".format(self.sku_id, self.comment_num))
+        log_info("BestBuy,{}共更新了{}条".format(self.sku_id, self.comment_num))
+
 
 
 def run(urls):
@@ -192,7 +194,7 @@ def run(urls):
     # close_db()
     end = time.time()
     print('BestBuy_end,耗时%s秒' % (end - start))
-    log_info("BestBuy_end,耗时%s秒" % (end - start))
+    # log_info("BestBuy_end,耗时%s秒" % (end - start))
 
 
 if __name__ == '__main__':

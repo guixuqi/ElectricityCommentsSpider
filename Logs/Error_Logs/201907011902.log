@@ -1,5 +1,0 @@
-2019-07-01 19:55:41,820 - root - ERROR - utils  - 152 - Amazon(B06XGBPW3D)报错信息：保存失败
-Traceback (most recent call last):
-  File "C:\Users\BruceChen\Desktop\Demo\reviews\amazon\amazon_review.py", line 70, in get_score
-    if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
-cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.SKU_PK)

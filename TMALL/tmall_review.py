@@ -37,8 +37,7 @@ class TMALLReview:
         self.score = ""
         self.ECOMMERCE_CODE = "6"
         self.SKU_DETAIL_ID = ""
-        # 查询数据库评论最晚日期
-        self.max_date = max_date(self.SKU_ID)
+        self.max_date = None
 
     @retry(stop_max_attempt_number=5)
     def parse_url(self):  # 发送请求,点击进入评论页面
@@ -100,6 +99,7 @@ class TMALLReview:
         # 点击按时间排序
         element_artist = WebDriverWait(self.driver, 20).until(
             lambda driver: self.driver.find_elements_by_tag_name('a"'))
+        # print(len(element_artist))
         element_artist[1].click()
 
     def get_content_list(self):  # 提取数据
@@ -147,7 +147,7 @@ class TMALLReview:
             CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
             # 评论ID
             # REVIEW_ID = self.SKU_ID + "_" + str(self.num)
-            REVIEW_ID = REVIEW_DATE.replace("/", "") + str(len(REVIEW_TEXT)) + Pinyin().get_pinyin(REVIEW_NAME).replace("-", "")
+            REVIEW_ID = self.SKU_DETAIL_ID + "_" + REVIEW_DATE.replace("/", "") + str(len(REVIEW_TEXT)) + Pinyin().get_pinyin(REVIEW_NAME).replace("-", "")
             # print(REVIEW_ID)
             # 保存ECOMMERCE_REVIEW_P数据库
             sql_review = "INSERT INTO ECOMMERCE_REVIEW_P(REVIEW_ID, SKU_ID, REVIEW_NAME, REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, CREATE_TIME, REVIEW_TEXT5, SKU_DETAIL_ID) VALUES('{}', '{}', '{}', '{}', '{}', '{}', '{}', to_date('{}','yyyy/MM/dd'), to_date('{}','yyyy/MM/dd HH24:mi:ss'),'{}', '{}')".format(
@@ -202,6 +202,7 @@ class TMALLReview:
         except Exception as e:
             logger(self.name, self.SKU_ID, "发送请求,进入评论页面失败")
             self.driver.close()
+            print("Tmall,{}共更新了{}条,".format(self.SKU_ID, self.num))
             return
         # 提取保存数据
         if self.get_content_list():
