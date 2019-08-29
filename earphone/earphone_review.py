@@ -44,10 +44,10 @@ class EarphoneReview:
         except Exception as e:
             print(self.sku_id+self.url_star+"请求失败", e)
             return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
-        if not self.SKU_DETAIL_ID:
-            print(self.sku_id+"查询不到SKU_DETAIL_ID")
-            return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
+        # if not self.SKU_DETAIL_ID:
+        #     print(self.sku_id+"查询不到SKU_DETAIL_ID")
+        #     return True
         # 总评分
         try:
             total_score = html.xpath(
@@ -58,8 +58,8 @@ class EarphoneReview:
             total_score = 0
         # print(total_score)
         # 保存评分
-        if save_score(self.sku_id, total_score, self.name, self.SKU_DETAIL_ID):
-            update_score(total_score, self.sku_id, self.name, self.SKU_DETAIL_ID)
+        if save_score(self.sku_id, total_score, self.name, self.SKU_DETAIL_ID, conn):
+            update_score(total_score, self.sku_id, self.name, self.SKU_DETAIL_ID, conn)
 
     def parse_review(self):
         data = {"webno": self.sku_id, "fstaff": 0}
@@ -68,9 +68,9 @@ class EarphoneReview:
         except Exception as e:
             print(self.sku_id+self.url_review+"请求失败", e)
             return True
-        if not html:
-            print(self.sku_id+"无评论数据")
-            return True
+        # if not html:
+        #     print(self.sku_id+"无评论数据")
+        #     return True
         divs = html.xpath("//div[@class='cnt-review']")
         # print(len(divs))
         if len(divs) < 1:
@@ -113,7 +113,9 @@ class EarphoneReview:
                 conn.rollback()
         print(self.num)
 
-    def run(self, url):
+    def run(self, start_url):
+        url = start_url.split("$$$")[0]
+        self.SKU_DETAIL_ID = start_url.split("$$$")[1]
         if self.parse_score(url):
             return
         if self.parse_review():
@@ -131,7 +133,6 @@ def run(urls):
         ear = EarphoneReview()
         ear.run(url)
         # time.sleep(3)
-    close_db()
     end = time.time()
     print("ear_end,%s" % (end - start))
     # log_info("ear_end,%s" % (end - start))

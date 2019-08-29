@@ -37,10 +37,10 @@ class BiccReview:
         self.driver.get(self.url)
 
     def get_score(self):
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
-        print(self.SKU_DETAIL_ID)
-        if not self.SKU_DETAIL_ID:
-            return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        # print(self.SKU_DETAIL_ID)
+        # if not self.SKU_DETAIL_ID:
+        #     return True
         try:
             self.score = WebDriverWait(self.driver, 10).until(
                 lambda driver: self.driver.find_element_by_xpath("//div[@class='bcs_box1']/p[@class='bcs_star']/span")).text
@@ -49,8 +49,8 @@ class BiccReview:
         except:
             self.score = 0
             logger(self.name, self.SKU_ID, "总评分获取失败")
-        if save_score(self.SKU_ID, self.score, self.name, self.SKU_DETAIL_ID):
-            update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID)
+        if save_score(self.SKU_ID, self.score, self.name, self.SKU_DETAIL_ID, conn):
+            update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID, conn)
 
     def get_content_list(self):
         dr = self.driver
@@ -111,7 +111,9 @@ class BiccReview:
             next_url = None
         return next_url
 
-    def run(self, url):
+    def run(self, start_url):
+        url = start_url.split("$$$")[0]
+        self.SKU_DETAIL_ID = start_url.split("$$$")[1]
         try:
             self.get_url(url)
         except:
@@ -133,8 +135,8 @@ class BiccReview:
                 self.driver.close()
                 return
             next_url = self.next_click()
-        print("yodo,{}更新了{}条,".format(self.SKU_ID, self.num))
-        log_info("yodo,{}更新了{}条,".format(self.SKU_ID, self.num))
+        print("bicc,{}更新了{}条,".format(self.SKU_ID, self.num))
+        log_info("bicc,{}更新了{}条,".format(self.SKU_ID, self.num))
         self.driver.close()
 
 
@@ -147,8 +149,8 @@ def run(urls):
         bicc.run(url)
     # close_db()
     end = time.time()
-    print("yodo_end,%s" % (end - start))
-    log_info("yodo_end,%s" % (end - start))
+    print("bicc_end,%s" % (end - start))
+    # log_info("bicc_end,%s" % (end - start))
 
 
 if __name__ == '__main__':

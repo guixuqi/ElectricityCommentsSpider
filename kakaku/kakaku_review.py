@@ -43,10 +43,10 @@ class KakakuReview:
         return html
 
     def parse_score(self, html):
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
-        if not self.SKU_DETAIL_ID:
-            print(self.sku_id+"查询不到SKU_DETAIL_ID")
-            return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
+        # if not self.SKU_DETAIL_ID:
+        #     print(self.sku_id+"查询不到SKU_DETAIL_ID")
+        #     return True
         # 总评分
         try:
             total_score = html.xpath("//div[@class='revstar']/span[@class='impact01']/text()")
@@ -56,8 +56,8 @@ class KakakuReview:
             total_score = 0
         # print(total_score)
         # 保存评分
-        if save_score(self.sku_id, total_score, self.name, self.SKU_DETAIL_ID):
-            update_score(total_score, self.sku_id, self.name, self.SKU_DETAIL_ID)
+        if save_score(self.sku_id, total_score, self.name, self.SKU_DETAIL_ID, conn):
+            update_score(total_score, self.sku_id, self.name, self.SKU_DETAIL_ID, conn)
 
     def parse_review(self, html):
         divs = html.xpath("//div[@class='reviewBox ver2013 boxGr']")
@@ -104,7 +104,9 @@ class KakakuReview:
                 # logger(self.name, self.sku_id, "保存失败")
                 conn.rollback()
 
-    def run(self, url):
+    def run(self, start_url):
+        url = start_url.split("$$$")[0]
+        self.SKU_DETAIL_ID = start_url.split("$$$")[1]
         review_url = self.get_url(url)
         if not review_url:
             return

@@ -2,7 +2,7 @@ from datetime import datetime
 import re
 import time
 from JD.jd_review import JDReview
-from utils import update_score, newReview, logger as jd_log, log_info, SKU_DETAIL_ID, max_date
+from utils import update_score, newReview, logger as jd_log, log_info, SKU_DETAIL_ID, max_date, conn, c
 
 
 class JDNewReview(JDReview):
@@ -77,12 +77,13 @@ class JDNewReview(JDReview):
             score = 0
         # 更新数据库总评分
         # update_score(score, productId, self.name)
-        if not SKU_DETAIL_ID(productId, self.ECOMMERCE_CODE):
-            return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(productId, self.ECOMMERCE_CODE)
+        # if not SKU_DETAIL_ID(productId, self.ECOMMERCE_CODE):
+        #     return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(productId, self.ECOMMERCE_CODE)
         # 查询数据库评论最晚日期
         self.max_date = max_date(self.SKU_DETAIL_ID)
-        update_score(score, productId, self.name, self.SKU_DETAIL_ID)
+        if score != 0:
+            update_score(score, productId, self.name, self.SKU_DETAIL_ID, conn)
         # 京东最多只返回100页数据
         for i in range(100):
             try:  # 防止网页提取失败，使爬取终断，直接跳过失败页，继续爬取

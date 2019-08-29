@@ -1,0 +1,27 @@
+2019-08-29 15:30:14,803 - root - ERROR - Amazon(B07PN288W7)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 300: illegal multibyte sequence
+2019-08-29 15:30:14,805 - root - ERROR - Amazon(B07PN288W7)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe4' in position 311: illegal multibyte sequence
+2019-08-29 15:30:14,806 - root - ERROR - Amazon(B07PN288W7)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xf6' in position 299: illegal multibyte sequence
+2019-08-29 15:30:14,812 - root - ERROR - Amazon(B07PN288W7)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:30:14,823 - root - ERROR - Amazon(B07PN288W7)报错信息：None
+Traceback (most recent call last):
+  File "C:/Users/hhh/Desktop/Demo/reviews/amazon/new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:30:14,831 - root - INFO - amazon,B07PN288W7共更新了0条,
+2019-08-29 15:30:14,831 - root - INFO - Amazon_end,耗时63.990283489227295秒

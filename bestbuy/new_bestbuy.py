@@ -1,6 +1,6 @@
+import cx_Oracle
 import os
 import sys
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, ""))
 import re
@@ -8,14 +8,14 @@ import time
 from datetime import datetime
 from bestbuy.bestbuy_review import BestBuyReview
 from urls import bestbuy_urls
-from utils import update_score, save_review, review_split, newReview, logger, log_info, c, conn, SKU_DETAIL_ID
+from utils import update_score, save_review, review_split, newReview, logger, log_info, conn, c, SKU_DETAIL_ID, max_date
 
 
 class BestBuyNewReview(BestBuyReview):
 
     def get_content_list(self, html):
         # 总评分
-        total_score_list = html.xpath("//span[@class='overall-rating']/text()")
+        total_score_list = html.xpath("//div[@class='col-xs-3 over-all-rating']//span[@class='overall-rating']/text()")
         if total_score_list:
             self.dict["total_score"] = "".join(total_score_list).strip()
             score = self.dict["total_score"]
@@ -24,10 +24,13 @@ class BestBuyNewReview(BestBuyReview):
             log_info("{}无总评分数据".format(self.sku_id))
             score = 0
         # 更新数据库评分
-        if not SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE):
-            return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
-        update_score(score, self.sku_id, self.name, self.SKU_DETAIL_ID)
+        # if not SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE):
+        #     return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
+        if score != 0:
+            update_score(score, self.sku_id, self.name, self.SKU_DETAIL_ID, conn)
+        # 查询数据库评论最晚日期
+        self.max_date = max_date(self.SKU_DETAIL_ID)
         for number in reversed(range(1, 6)):
             self.comments_list = []
             if number < 5:
@@ -93,8 +96,7 @@ class BestBuyNewReview(BestBuyReview):
                 continue
             # 保存数据库
             sql = save_review(REVIEW_ID, self.sku_id, number, comment_dict['comment_user'],
-                              comment_dict['comment_title'], REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4,
-                              REVIEW_DATE, REVIEW_TEXT5, self.SKU_DETAIL_ID)
+                              comment_dict['comment_title'], REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, REVIEW_TEXT5, self.SKU_DETAIL_ID)
             try:
                 c.execute(sql)
                 conn.commit()
@@ -133,4 +135,5 @@ def bestbuy_run(urls, h, m):
 if __name__ == '__main__':
     urls = bestbuy_urls()
     # bestbuy_run(urls, 9, 30)
+    # urls = ["https://www.bestbuy.com/site/astro-gaming-astro-a50-base-station-rf-wireless-over-the-ear-headphones-black/6349969.p?skuId=6349969"]
     main(urls)

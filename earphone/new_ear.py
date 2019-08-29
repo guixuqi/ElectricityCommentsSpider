@@ -24,10 +24,10 @@ class EarphoneNewReview(EarphoneReview):
         except Exception as e:
             print(self.sku_id+self.url_star+"请求失败", e)
             return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
-        if not self.SKU_DETAIL_ID:
-            print(self.sku_id+"查询不到SKU_DETAIL_ID")
-            return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
+        # if not self.SKU_DETAIL_ID:
+        #     print(self.sku_id+"查询不到SKU_DETAIL_ID")
+        #     return True
         self.max_date = max_date(self.SKU_DETAIL_ID)
         # 总评分
         try:
@@ -39,7 +39,7 @@ class EarphoneNewReview(EarphoneReview):
             total_score = 0
         # print(total_score)
         # 更新评分
-        update_score(total_score, self.sku_id, self.name, self.SKU_DETAIL_ID)
+        update_score(total_score, self.sku_id, self.name, self.SKU_DETAIL_ID, conn)
 
     def parse_review(self):
         data = {"webno": self.sku_id, "fstaff": 0}
@@ -48,9 +48,9 @@ class EarphoneNewReview(EarphoneReview):
         except Exception as e:
             print(self.sku_id+self.url_review+"请求失败", e)
             return True
-        if not html:
-            print(self.sku_id+"无评论数据")
-            return True
+        # if not html:
+        #     print(self.sku_id+"无评论数据")
+        #     return True
         divs = html.xpath("//div[@class='cnt-review']")
         # print(len(divs))
         if len(divs) < 1:
@@ -105,7 +105,6 @@ def main(urls):
         ear = EarphoneNewReview()
         ear.run(url)
         # time.sleep(3)
-    close_db()
     end = time.time()
     print("ear_end,%s" % (end - start))
     # log_info("ear_end,%s" % (end - start))

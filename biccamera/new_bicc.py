@@ -18,15 +18,15 @@ from selenium.webdriver.common.by import By
 class BiccNewReview(BiccReview):
 
     def get_score(self):
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
-        if not self.SKU_DETAIL_ID:
-            return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        # if not self.SKU_DETAIL_ID:
+        #     return True
         self.max_date = max_date(self.SKU_DETAIL_ID)
         try:
             self.score = WebDriverWait(self.driver, 10).until(
                 lambda driver: self.driver.find_element_by_xpath("//div[@class='bcs_box1']/p[@class='bcs_star']/span")).text
             self.score = float(self.score)
-            update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID)
+            update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID, conn)
         except:
             logger(self.name, self.SKU_ID, "总评分获取失败")
 
@@ -58,8 +58,8 @@ class BiccNewReview(BiccReview):
                 continue
             re_date = datetime.strptime(REVIEW_DATE, "%Y/%m/%d")
             if newReview(self.max_date, re_date):
-                print("yodo,{}更新了{}条,".format(self.SKU_ID, self.num))
-                log_info("yodo,{}更新了{}条,".format(self.SKU_ID, self.num))
+                print("bicc,{}更新了{}条,".format(self.SKU_ID, self.num))
+                log_info("bicc,{}更新了{}条,".format(self.SKU_ID, self.num))
                 return True
             CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
             REVIEW_ID = WebDriverWait(tr, 10).until(
@@ -91,8 +91,8 @@ def main(urls):
         bicc = BiccNewReview()
         bicc.run(url)
     end = time.time()
-    print("yodo_end,%s" % (end - start))
-    log_info("yodo_end,%s" % (end - start))
+    print("bicc_end,%s" % (end - start))
+    log_info("bicc_end,%s" % (end - start))
 
 
 if __name__ == '__main__':

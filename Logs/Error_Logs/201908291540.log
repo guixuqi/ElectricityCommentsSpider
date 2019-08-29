@@ -1,0 +1,635 @@
+2019-08-29 15:40:53,141 - root - ERROR - utils  - 192 - Amazon(B01NAVANRX)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:53,150 - root - ERROR - utils  - 192 - Amazon(B01NAVANRX)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:53,155 - root - ERROR - utils  - 192 - Amazon(B01NAVANRX)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:53,161 - root - ERROR - utils  - 192 - Amazon(B01NAVANRX)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:57,755 - root - ERROR - utils  - 192 - Amazon(B07N6NRS8Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,218 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,224 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,229 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,235 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,241 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,247 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,252 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,258 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:40:59,264 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:04,548 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:04,561 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:04,567 - root - ERROR - utils  - 192 - Amazon(B07NTB3X4Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:06,264 - root - ERROR - utils  - 192 - Amazon(B07T8SSPCV)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:11,134 - root - ERROR - utils  - 192 - Amazon(B075SSLKDB)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:13,527 - root - ERROR - utils  - 192 - Amazon(B07KNK8XCP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:17,823 - root - ERROR - utils  - 192 - Amazon(B07S4HL287)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:17,831 - root - ERROR - utils  - 192 - Amazon(B07S4HL287)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:17,836 - root - ERROR - utils  - 192 - Amazon(B07S4HL287)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:17,842 - root - ERROR - utils  - 192 - Amazon(B07S4HL287)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:24,973 - root - ERROR - utils  - 192 - Amazon(B07GZQS6YH)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:24,978 - root - ERROR - utils  - 192 - Amazon(B07GZQS6YH)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:24,985 - root - ERROR - utils  - 192 - Amazon(B07GZQS6YH)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:25,004 - root - ERROR - utils  - 192 - Amazon(B07GZQS6YH)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:26,687 - root - ERROR - utils  - 192 - Amazon(B07RQQ4G1S)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:29,194 - root - ERROR - utils  - 192 - Amazon(B07PSZ8395)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:29,200 - root - ERROR - utils  - 192 - Amazon(B07PSZ8395)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:29,208 - root - ERROR - utils  - 192 - Amazon(B07PSZ8395)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:29,212 - root - ERROR - utils  - 192 - Amazon(B07PSZ8395)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:37,630 - root - ERROR - utils  - 192 - Amazon(B07T6YJYPP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:37,635 - root - ERROR - utils  - 192 - Amazon(B07T6YJYPP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:37,640 - root - ERROR - utils  - 192 - Amazon(B07T6YJYPP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:37,646 - root - ERROR - utils  - 192 - Amazon(B07T6YJYPP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:37,652 - root - ERROR - utils  - 192 - Amazon(B07T6YJYPP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:37,658 - root - ERROR - utils  - 192 - Amazon(B07T6YJYPP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:39,352 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xa0' in position 289: illegal multibyte sequence
+2019-08-29 15:41:48,419 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:48,425 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:48,430 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:48,437 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:48,441 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:48,446 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:48,453 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:48,458 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:48,464 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:49,953 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:49,961 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:49,966 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:49,972 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:49,978 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:49,984 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:49,989 - root - ERROR - utils  - 192 - Amazon(B07TT4L7T5)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:54,487 - root - ERROR - utils  - 192 - Amazon(B07PF8P73Y)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:54,492 - root - ERROR - utils  - 192 - Amazon(B07PF8P73Y)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:54,497 - root - ERROR - utils  - 192 - Amazon(B07PF8P73Y)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:54,503 - root - ERROR - utils  - 192 - Amazon(B07PF8P73Y)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,600 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,605 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,611 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,616 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,622 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,628 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,634 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,640 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:41:58,645 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:00,136 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:00,143 - root - ERROR - utils  - 192 - Amazon(B07SJ45SMM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:11,187 - root - ERROR - utils  - 192 - Amazon(B0792PG3S9)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:11,193 - root - ERROR - utils  - 192 - Amazon(B0792PG3S9)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:15,075 - root - ERROR - utils  - 192 - Amazon(B071ZF5KCM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:15,079 - root - ERROR - utils  - 192 - Amazon(B071ZF5KCM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:17,030 - root - ERROR - utils  - 192 - Amazon(B0053N3NVW)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:17,034 - root - ERROR - utils  - 192 - Amazon(B0053N3NVW)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:18,528 - root - ERROR - utils  - 192 - Amazon(B016XKHLCK)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f629' in position 334: illegal multibyte sequence
+2019-08-29 15:42:18,532 - root - ERROR - utils  - 192 - Amazon(B016XKHLCK)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:20,509 - root - ERROR - utils  - 192 - Amazon(B0773J6HTY)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:20,514 - root - ERROR - utils  - 192 - Amazon(B0773J6HTY)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:27,463 - root - ERROR - utils  - 192 - Amazon(B077XF3XJK)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:27,474 - root - ERROR - utils  - 192 - Amazon(B077XF3XJK)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:27,485 - root - ERROR - utils  - 192 - Amazon(B077XF3XJK)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,864 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,868 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,874 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,880 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,885 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,897 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,902 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,908 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:34,914 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:37,347 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:37,360 - root - ERROR - utils  - 192 - Amazon(B07PZ6SL49)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:40,486 - root - ERROR - utils  - 192 - Amazon(B0792H37RZ)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:40,491 - root - ERROR - utils  - 192 - Amazon(B0792H37RZ)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:45,000 - root - ERROR - utils  - 192 - Amazon(B0787KGCM1)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:45,006 - root - ERROR - utils  - 192 - Amazon(B0787KGCM1)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:45,011 - root - ERROR - utils  - 192 - Amazon(B0787KGCM1)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:49,212 - root - ERROR - utils  - 192 - Amazon(B074T62N9N)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:51,681 - root - ERROR - utils  - 192 - Amazon(B07SSRPQTP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:42:51,685 - root - ERROR - utils  - 192 - Amazon(B07SSRPQTP)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:13,866 - root - ERROR - utils  - 192 - Amazon(B07GJNNH9D)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:19,427 - root - ERROR - utils  - 192 - Amazon(B01N2VJRY0)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:27,932 - root - ERROR - utils  - 192 - Amazon(B07Q9YDCNX)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:29,376 - root - ERROR - utils  - 192 - Amazon(B07V4Y97VX)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:29,382 - root - ERROR - utils  - 192 - Amazon(B07V4Y97VX)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:30,948 - root - ERROR - utils  - 192 - Amazon(B07PD1YRT8)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:46,323 - root - ERROR - utils  - 192 - Amazon(B07FLVNRD2)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:51,872 - root - ERROR - utils  - 192 - Amazon(B07TZZGP3Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:43:51,876 - root - ERROR - utils  - 192 - Amazon(B07TZZGP3Q)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:08,122 - root - ERROR - utils  - 192 - Amazon(B07TWDKVR6)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:08,130 - root - ERROR - utils  - 192 - Amazon(B07TWDKVR6)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:18,243 - root - ERROR - utils  - 192 - Amazon(B0762LS2YT)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:20,653 - root - ERROR - utils  - 192 - Amazon(B07V2DM4JL)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:23,330 - root - ERROR - utils  - 192 - Amazon(B07L3MMBBT)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:25,685 - root - ERROR - utils  - 192 - Amazon(B07RXPP5X1)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:32,154 - root - ERROR - utils  - 192 - Amazon(B07MX7V8XM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:32,160 - root - ERROR - utils  - 192 - Amazon(B07MX7V8XM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:32,165 - root - ERROR - utils  - 192 - Amazon(B07MX7V8XM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:32,171 - root - ERROR - utils  - 192 - Amazon(B07MX7V8XM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:32,177 - root - ERROR - utils  - 192 - Amazon(B07MX7V8XM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:32,183 - root - ERROR - utils  - 192 - Amazon(B07MX7V8XM)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:39,382 - root - ERROR - utils  - 192 - Amazon(B07PY391SX)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:40,823 - root - ERROR - utils  - 192 - Amazon(B01MYN3T6K)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 15:44:43,458 - root - ERROR - utils  - 192 - Amazon(B07GXGDD4K)报错信息：None
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\amazon\new_amazon.py", line 99, in comment_data
+    c.execute(sql)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)

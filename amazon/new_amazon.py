@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 from Logs.log import log1
 from amazon.amazon_review import AmazonReview
-from utils import update_score, save_review, review_split, close_db, newReview, log_info, logger, c, conn,SKU_DETAIL_ID,max_date
+from utils import update_score, save_review, review_split, close_db, newReview, log_info, logger, conn, c, SKU_DETAIL_ID, max_date
 import locale
 
 
@@ -111,13 +111,14 @@ class AmazonNewReview(AmazonReview):
         except Exception as e:
             # print(e)
             logger(self.name, sku_id, "无总评分数据")
-            score = "0"
+            # score = "0"
+            return
         # 更新总评分
-        if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
-            return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        # if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
+        #     return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
         self.max_d = max_date(self.SKU_DETAIL_ID)
-        update_score(score, self.SKU_ID, self.name, self.SKU_DETAIL_ID)
+        update_score(score, self.SKU_ID, self.name, self.SKU_DETAIL_ID, conn)
 
 
 def main(urls):
@@ -129,6 +130,7 @@ def main(urls):
         amazon = AmazonNewReview()
         amazon.run(url)
     end = time.time()
+    print("Amazon_end,耗时%s秒" % (end - start))
     log_info("Amazon_end,耗时%s秒" % (end - start))
 
 
@@ -144,7 +146,8 @@ def amazon_run(urls, h, m):
 
 
 if __name__ == '__main__':
-    from urls import amazon_urls
-    urls = amazon_urls()
+    # from urls import amazon_urls
+    # urls = amazon_urls()
+    urls = ["https://www.amazon.de/UNBREAKcable-Kabelloses-Qi-zertifizierte-Ladestation-Unterst%C3%BCtzt/dp/B07PN288W7/ref=sr_1_89?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=UNBREAKcable&qid=1563439003&s=gateway&sr=8-89$$$SKU-62788d49-3468-4ff2-a98d-477e1242dbec"]
     # amazon_run(urls, 11, 32)
     main(urls)

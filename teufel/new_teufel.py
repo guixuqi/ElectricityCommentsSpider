@@ -25,7 +25,7 @@ class TeufulNewReview(TeufulReview):
             return True
         self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
         self.max_date = max_date(self.SKU_DETAIL_ID)
-        update_score(score, self.sku_id, self.name, self.SKU_DETAIL_ID)
+        update_score(score, self.sku_id, self.name, self.SKU_DETAIL_ID, conn)
 
         if self.get_review():
             return True

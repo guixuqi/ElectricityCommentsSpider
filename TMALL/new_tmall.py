@@ -3,7 +3,7 @@ from datetime import datetime
 from selenium.webdriver.support.ui import WebDriverWait
 from xpinyin import Pinyin
 from TMALL.tmall_review import TMALLReview
-from utils import review_split, c, logger, log_info, conn, review_days, SKU_DETAIL_ID, update_score, newReview, max_date
+from utils import review_split, logger, log_info, conn, review_days, SKU_DETAIL_ID, update_score, newReview, max_date
 
 
 class TMALLNewReview(TMALLReview):
@@ -74,6 +74,7 @@ class TMALLNewReview(TMALLReview):
                 REVIEW_TEXT2.replace("'", ""), REVIEW_TEXT3.replace("'", ""), REVIEW_TEXT4.replace("'", ""),
                 REVIEW_DATE, CREATE_TIME, REVIEW_TEXT5.replace("'", ""), self.SKU_DETAIL_ID)
             try:
+                c = conn.cursor()
                 c.execute(sql_review)
                 conn.commit()
                 # self.count += 1
@@ -85,12 +86,13 @@ class TMALLNewReview(TMALLReview):
 
     def save_star(self):
         # 更新总评分
-        if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
-            return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        # if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
+        #     return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
         # 查询数据库评论最晚日期
         self.max_date = max_date(self.SKU_DETAIL_ID)
-        update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID)
+        if self.score != 0:
+            update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID, conn)
 
 
 def main(url_list):

@@ -1,8 +1,9 @@
+import queue
+import threading
+import cx_Oracle
 import os
 import sys
-
 from IP_proxy.ip_proxy import proxy_auth_plugin_path
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, ""))
 import re
@@ -11,19 +12,23 @@ from selenium import webdriver
 import time
 from retrying import retry
 # from TMALL.selenium_status import getHttpStatus
-from utils import review_split, c, conn, close_db, logger, log_info, save_score, SKU_DETAIL_ID, save_review, max_date
+from utils import review_split, close_db, logger, log_info, save_score, SKU_DETAIL_ID, save_review, max_date
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from xpinyin import Pinyin
 
+dsnStr = cx_Oracle.makedsn("192.168.110.205", 1521, "EIP")
+conn = cx_Oracle.connect("EIP", "EIP", dsnStr, threaded=True)
+# sem = threading.Semaphore(12)  # 限制线程的最大数量
+
 
 class TMALLReview:
-
     def __init__(self, url):
         self.name = "tmall"
-        self.start_url = url
+        self.start_url = url.split("$$$")[0]
+        self.SKU_DETAIL_ID = url.split("$$$")[1]
         self.driver = webdriver.Chrome()
         # 使用多贝云IP代理
         # options = webdriver.ChromeOptions()
@@ -36,7 +41,6 @@ class TMALLReview:
         # 总评分
         self.score = ""
         self.ECOMMERCE_CODE = "6"
-        self.SKU_DETAIL_ID = ""
         self.max_date = None
 
     @retry(stop_max_attempt_number=5)
@@ -46,7 +50,6 @@ class TMALLReview:
         # self.driver.get("http://ip.dobel.cn/switch-ip")
         # 发送请求，获取响应
         self.driver.get(self.start_url)
-
 
     def enter_review(self):
         # 发送请求
@@ -70,7 +73,6 @@ class TMALLReview:
         except:
             self.score = 0
             logger(self.name, self.SKU_ID, "无总评分数据")
-
         self.save_star()
 
     def close_alter(self):
@@ -84,8 +86,14 @@ class TMALLReview:
             pass
 
     def click_review(self):
-        WebDriverWait(self.driver, 30).until(
-            EC.element_to_be_clickable((By.XPATH, "//div[@id='J_TabBarBox']//a[text()='累计评价 ']"))).click()
+        # WebDriverWait(self.driver, 100).until(
+        #     EC.element_to_be_clickable((By.XPATH, "//div[@id='J_TabBarBox']//a[text()='累计评价 ']"))).click()
+        # button = self.driver.find_element_by_xpath("//div[@id='J_TabBarBox']//a[text()='累计评价 ']")
+        button = WebDriverWait(self.driver, 100).until(
+            EC.element_to_be_clickable((By.XPATH, "//div[@id='J_TabBarBox']//a[text()='累计评价 ']")))
+        self.driver.execute_script("arguments[0].click()", button)
+        # self.driver.execute_script("$(arguments[0]).click()", button)
+
 
     def order_time(self):
         # 鼠标悬停按默认
@@ -97,16 +105,19 @@ class TMALLReview:
         actions.move_to_element(elements).perform()
         # time.sleep(1)
         # 点击按时间排序
-        element_artist = WebDriverWait(self.driver, 20).until(
-            lambda driver: self.driver.find_elements_by_tag_name('a"'))
+        element_artist = WebDriverWait(self.driver, 100).until(
+            lambda driver: self.driver.find_element_by_xpath("//li[@class='tm-r-time']/*"))
+        element_artist.click()
+        # element_artist = WebDriverWait(self.driver, 20).until(
+        #     lambda driver: self.driver.find_elements_by_tag_name('a"'))
         # print(len(element_artist))
-        element_artist[1].click()
+        # element_artist[1].click()
 
     def get_content_list(self):  # 提取数据
         dr = self.driver
         try:
             dr.find_element_by_xpath("//*[text()='访问验证']")
-            log_info("{},弹出访问验证输入框,被限制访问".format(self.name))
+            log_info("{},弹出访问验证输入框,被限制访问".format(self.SKU_ID))
             return True
         except:
             pass
@@ -147,7 +158,7 @@ class TMALLReview:
             CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
             # 评论ID
             # REVIEW_ID = self.SKU_ID + "_" + str(self.num)
-            REVIEW_ID = self.SKU_DETAIL_ID + "_" + REVIEW_DATE.replace("/", "") + str(len(REVIEW_TEXT)) + Pinyin().get_pinyin(REVIEW_NAME).replace("-", "")
+            REVIEW_ID = self.SKU_DETAIL_ID + "_" + REVIEW_DATE.replace("/", "") + str(len(REVIEW_TEXT)) + str(Pinyin().get_pinyin(REVIEW_NAME.replace("*", "")).replace("-", ""))
             # print(REVIEW_ID)
             # 保存ECOMMERCE_REVIEW_P数据库
             sql_review = "INSERT INTO ECOMMERCE_REVIEW_P(REVIEW_ID, SKU_ID, REVIEW_NAME, REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, CREATE_TIME, REVIEW_TEXT5, SKU_DETAIL_ID) VALUES('{}', '{}', '{}', '{}', '{}', '{}', '{}', to_date('{}','yyyy/MM/dd'), to_date('{}','yyyy/MM/dd HH24:mi:ss'),'{}', '{}')".format(
@@ -156,6 +167,7 @@ class TMALLReview:
                 REVIEW_TEXT2.replace("'", ""), REVIEW_TEXT3.replace("'", ""), REVIEW_TEXT4.replace("'", ""),
                 REVIEW_DATE, CREATE_TIME, REVIEW_TEXT5.replace("'", ""), self.SKU_DETAIL_ID)
             try:
+                c = conn.cursor()
                 c.execute(sql_review)
                 conn.commit()
                 self.num += 1
@@ -165,6 +177,7 @@ class TMALLReview:
 
     def save(self, sql):
         try:
+            c = conn.cursor()
             c.execute(sql)
             conn.commit()
         except Exception as e:
@@ -173,11 +186,11 @@ class TMALLReview:
 
     def save_star(self):
         # 以SKU_ID和ECOMMERCE_CODE联合查询ECOMMERCE_SKU_DETAIL表SKU_DETAIL_ID的值
-        if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
-            return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        # if not SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE):
+        #     return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
         # 保存总评分
-        save_score(self.SKU_ID, self.score, self.name, self.SKU_DETAIL_ID)
+        save_score(self.SKU_ID, self.score, self.name, self.SKU_DETAIL_ID, conn)
 
     def next_click(self):
         dr = self.driver
@@ -192,11 +205,12 @@ class TMALLReview:
         return next_url
 
     def run(self):  # 实现主要逻辑
-        # self.proxy()
-        # resp = self.parse_url()
-        # if resp == {}:
-        #     print("e")
-        #     return
+        # with sem:
+            # self.proxy()
+            # resp = self.parse_url()
+            # if resp == {}:
+            #     print("e")
+            #     return
         try:
             self.enter_review()  # 发送请求,进入评论页面
         except Exception as e:
@@ -216,7 +230,7 @@ class TMALLReview:
         while next_url:
             i += 1
             # 因为Tmall限制,只抓取前7页评论
-            if self.get_content_list() or i == 7:
+            if self.get_content_list() or i == 3:
                 break
             next_url = self.next_click()
                 # self.proxy()
@@ -234,19 +248,34 @@ class TMALLReview:
 
 
 def run(urls):
-    start = time.time()
+    # start = time.time()
+    print(len(urls))
     if len(urls) < 1 or isinstance(urls, list) is False:
         log_info("Tmall,无url信息或传入参数格式不是列表")
         return True
+    # for url in urls:
+    #     tmall = TMALLReview(url)
+    #     tmall.run()
+    #     time.sleep(10)
+    # q = queue.Queue()
+    threads = []
     for url in urls:
-        tmall = TMALLReview(url)
-        tmall.run()
-        time.sleep(10)
+        t = threading.Thread(target=TMALLReview(url).run)
+        # q.put(t)
+        threads.append(t)
+    # while not q.empty():
+    for t in threads:
+        # t = q.get()
+        # q.task_done()
+        t.start()
+    for t in threads:
+        t.join()
+    # q.join()
     # 关闭数据库
-    close_db()
-    end = time.time()
-    print("tmall_end,耗时%s秒" % (end - start))
-    log_info("tmall_end,耗时%s秒" % (end - start))
+    # close_db()
+    # end = time.time()
+    # print("tmall_end,耗时%s秒" % (end - start))
+    # log_info("tmall_end,耗时%s秒" % (end - start))
 
 
 if __name__ == '__main__':

@@ -1,7 +1,6 @@
 from datetime import datetime
 import re
 from utils import log_info, logger
-from utils import conn, c
 
 # JD
 jd_url0 = "https://item.jd.com/100002361195.html"  # 录音笔C1
@@ -32,6 +31,22 @@ bestBuy_url4 = "https://www.bestbuy.com/site/razer-kraken-pro-v2-wired-stereo-ga
 # logitech-g-pro
 bestBuy_url5 = "https://www.bestbuy.com/site/logitech-g-pro-wired-stereo-gaming-headset-for-windows-black/6352842.p?skuId=6352842"
 bestBuy_url6 = "https://www.bestbuy.com/site/razer-kraken-wired-stereo-gaming-headset-black/6330450.p?skuId=6330450"
+# Soundcore Life NC
+bestBuy_url7 = "https://www.bestbuy.com/site/anker-soundcore-life-wireless-in-ear-headphones-black/6253426.p?skuId=6253426"
+# Corsair RGB
+bestBuy_url8 = "https://www.bestbuy.com/site/corsair-void-pro-rgb-wireless-dolby-7-1-channel-surround-sound-gaming-headset-for-pc-white/6006602.p?skuId=6006602"
+# Corsair Void Pro Surround Gaming Headset
+bestBuy_url9 = "https://www.bestbuy.com/site/corsair-gaming-void-pro-rgb-usb-wired-dolby-7-1-surround-sound-gaming-headset-carbon-black/6006603.p?skuId=6006603"
+# Razer Kraken Tournament
+bestBuy_url10 = "https://www.bestbuy.com/site/razer-kraken-tournament-edition-wired-stereo-gaming-headset-for-pc-mac-xbox-one-switch-ps4-mobile-devices-black/6263312.p?skuId=6263312"
+# Razer Nari Wireless
+bestBuy_url11 = "https://www.bestbuy.com/site/razer-nari-ultimate-wireless-thx-spatial-audio-gaming-headset-for-pc-and-playstation-4-gunmetal/6298660.p?skuId=6298660"
+# AirPods
+bestBuy_url12 = "https://www.bestbuy.com/site/apple-airpods-with-charging-case-latest-model-white/6084400.p?skuId=6084400"
+# HyperX Cloud Alpha
+bestBuy_url13 = "https://www.bestbuy.com/site/hyperx-cloud-alpha-wired-stereo-gaming-headset-for-pc-ps4-xbox-one-and-nintendo-switch-red-black/6100109.p?skuId=6100109"
+# HyperX Cloud II
+bestBuy_url14 = "https://www.bestbuy.com/site/hyperx-cloud-ii-pro-wired-gaming-headset-red/4505300.p?skuId=4505300"
 
 
 # Amazon
@@ -76,7 +91,7 @@ start_url28 = "https://www.amazon.com/Anker-Wireless-Qi-Certified-Compatible-Pow
 # Anker PowerWave 7.5 Pad
 start_url29 = "https://www.amazon.com/Anker-PowerWave-Wireless-Qi-Certified-Compatible/dp/B078WRCW35/ref=sr_1_1"
 # Anker Wireless Charger Charging Pad
-start_url30 = "https://www.amazon.com/Anker-PowerWave-Wireless-Qi-Certified-Compatible/dp/B00Y839YMU/ref=sr_1_1"
+start_url30 = "https://www.amazon.com/Anker-PowerWave-Wireless-Qi-Certified-Compatible/dp/B00Y839YMU/ref=sr_1_1"  # 链接失效
 # Anker 10W Wireless Charger
 start_url31 = "https://www.amazon.com/Anker-Qi-Certified-Compatible-Fast-Charging-PowerWave/dp/B01KJL4XNY/ref=sr_1_1"
 # Razer Kraken Pro V2
@@ -84,7 +99,6 @@ start_url31 = "https://www.amazon.com/Anker-Qi-Certified-Compatible-Fast-Chargin
 # Razer Kraken Tournament  B07G4KD8WW
 start_url32 = "https://www.amazon.co.uk/Razer-Kraken-Tournament-Headset-Controller/dp/B07G4KD8WW/ref=sr_1_1"
 start_url37 = "https://www.amazon.co.uk/Razer-Headset-Drivers-Playstation-Earcups/dp/B0713QM36X"
-
 # # Corsair RGB   B0749BX1X3 与 B0749CW8X6评论相同
 start_url33 = "https://www.amazon.co.uk/Corsair-Customisable-Optimised-Unidirectional-Microphone/dp/B0749BX1X3/ref=sr_1_1"
 start_url22 = "https://www.amazon.de/Gaming-Headset-PS4Xbox-OneMobile-PlayStation/dp/B0711V7BV6/ref=sr_1_1"
@@ -103,6 +117,41 @@ start_url21 = "https://www.amazon.de/Corsair-WIRELESS-Headset-Wireless-schwarz/d
 amazon_url34 = "https://www.amazon.co.uk/UNBREAKcable-Wireless-Charger-Qi-Certified-Charging-Black/dp/B07PN288W7/ref=sr_1_55"
 amazon_url35 = "https://www.amazon.de/UNBREAKcable-Kabelloses-Qi-zertifizierte-Ladestation-Unterst%C3%BCtzt/dp/B07PN288W7/ref=sr_1_89"
 amazon_url36 = "https://www.amazon.fr/UNBREAKcable-Wireless-Charger-Black-1Pack/dp/B07PN288W7/ref=sr_1_75"
+# Logitech G Pro
+amazon_url_1_0 = "https://www.amazon.com/Logitech-G-Pro-Gaming-Headset/dp/B07PHML2XB/ref=sxbs_sxwds-stvp"
+
+# Anker 10W Wireless Charger
+amazon_url_2_0 = "https://www.amazon.co.uk/Anker-Wireless-Qi-Certified-Charging-Fast-Charging/dp/B01KJL4XNY/ref=sr_1_7"
+# Anker PowerWave 7.5 Pad
+amazon_url_2_1 = "https://www.amazon.co.uk/Anker-PowerWave-Wireless-Charging-Qi-Certified/dp/B0791CPWBG/ref=sr_1_2"
+# HyperX Cloud Ⅱ
+amazon_url_2_2 = "https://www.amazon.co.uk/HyperX-Cloud-Gaming-Headset-Mobile/dp/B00SAYCXWG/ref=sr_1_1"
+# Razer Kraken 7.1 Chroma
+amazon_url_2_3 = "https://www.amazon.co.uk/Razer-Surround-Retractable-Microphone-Lighting/dp/B00MVT7BAA/ref=sr_1_3"
+# Razer Nari Wireless
+amazon_url_2_4 = "https://www.amazon.co.uk/Razer-Virtual-Surround-Wireless-Headset/dp/B07G1Y2K5F/ref=sr_1_4"
+# True-Wireless Headphones, zolo liberty
+amazon_url_2_5 = "https://www.amazon.co.uk/ZOLO-True-Wireless-Headphones-Technology-Calls-Upgraded/dp/B07GKHYVM8/ref=sr_1_3"
+# AirPods
+amazon_url_2_6 = "https://www.amazon.co.uk/Apple-Air-Pods-previous-model/dp/B01MCW7EOW/ref=sr_1_21"
+
+amazon_url_4_0 = "https://www.amazon.de/Anker-Qi-Zertifiziertes-Kabelloses-Leistungsstarkes-Induktives/dp/B01KJL4XNY/ref=sr_1_5"
+# Anker PowerWave 7.5 Pad
+amazon_url_4_1 = "https://www.amazon.de/Anker-PowerWave-Kabelloses-Ladegerät-enthalten/dp/B07917M2M9/ref=sr_1_2"
+# HyperX Cloud Ⅱ
+amazon_url_4_2 = "https://www.amazon.de/Kingston-HyperX-Cloud-Gaming-Kopfhörer/dp/B00SAYCXWG/ref=sr_1_2"
+# HyperX Cloud Alpha
+amazon_url_4_3 = "https://www.amazon.de/Cloud-Pro-Gaming-Headset-HyperX-HX-HSCA-RD-EM-Rot/dp/B076GT6XJ9/ref=sr_1_2_sspa"
+# PowerPort Wireless 5 Pad
+amazon_url_4_4 = "https://www.amazon.de/Anker-PowerPort-Induktive-Ladestation-Qi-fähigen-Schwarz/dp/B0756Z8X82/ref=sr_1_5"
+# Razer Kraken pro v2
+amazon_url_4_5 = "https://www.amazon.de/Razer-Kraken-Pro-Oval-Unibody-Rahmen/dp/B01MF4V3LO/ref=sr_1_3"
+# Razer Kraken Tournament
+amazon_url_4_6 = "https://www.amazon.de/Razer-Kraken-Tournament-Black-Kabelgebundenes/dp/B07G4KD8WW/ref=sr_1_2"
+# Razer Nari Wireless
+amazon_url_4_7 = "https://www.amazon.de/Razer-Nari-Kabelloses-Gaming-Headset-höchstem/dp/B07G1Y2K5F/ref=sr_1_1"
+# AirPods
+amazon_url_4_8 = "https://www.amazon.de/Apple-479JB51-AirPods/dp/B01MCW7EOW/ref=sr_1_1"
 
 # B07N6NRS8Q
 amazon_url38 = "https://www.amazon.co.jp/Zero-Audio-TWZ-1000-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3/dp/B07N6NRS8Q/ref=sr_1_1"
@@ -174,7 +223,15 @@ def bestbuy_urls():
     bestbuy_urls.append(bestBuy_url3)
     bestbuy_urls.append(bestBuy_url4)
     bestbuy_urls.append(bestBuy_url5)
-
+    bestbuy_urls.append(bestBuy_url6)
+    bestbuy_urls.append(bestBuy_url7)
+    bestbuy_urls.append(bestBuy_url8)
+    bestbuy_urls.append(bestBuy_url9)
+    bestbuy_urls.append(bestBuy_url10)
+    bestbuy_urls.append(bestBuy_url11)
+    bestbuy_urls.append(bestBuy_url12)
+    bestbuy_urls.append(bestBuy_url13)
+    bestbuy_urls.append(bestBuy_url14)
     return bestbuy_urls
 
 def amazon_urls():
@@ -216,16 +273,17 @@ def amazon_urls():
     # url_list.append(amazon_url35)
     # url_list.append(amazon_url36)
     # url_list.append(start_url37)
-    url_list.append(amazon_url38)
-    url_list.append(amazon_url39)
-    url_list.append(amazon_url40)
-    url_list.append(amazon_url41)
+    # url_list.append(amazon_url_1_0)
+    url_list.append(amazon_url38+"$$$"+"SKU-0f2e34d7-6634-4a2c-b40b-0efba00d7585")
+    url_list.append(amazon_url39+"$$$"+"SKU-4f500130-4431-46bf-b266-bfc4296653eb")
+    url_list.append(amazon_url40+"$$$"+"SKU-a721b98a-d33b-4903-98f4-1795fc6f18f7")
+    url_list.append(amazon_url41+"$$$"+"SKU-b6a75800-af77-400c-b6a3-5adcfa45ea27")
 
     return url_list
 
 def yodo_urls():
     url_lists = []
-    url_lists.append(yodo_url1)
+    url_lists.append(yodo_url1+"$$$"+"SKU-4135abd4-6e26-473f-a8c0-9fa9d2ffd24d")
     return url_lists
 
 def bicc_urls():

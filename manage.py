@@ -1,5 +1,5 @@
 import re
-import threading
+import multiprocessing
 import time
 from datetime import datetime
 from JD import jd_review, new_jd
@@ -25,21 +25,21 @@ def list_split(urls):
     for u in urls:
         if u == None:
             continue
-        if re.search(r"tmall.com", u):
+        if re.search("tmall\.com", u):
             tms.append(u)
-        elif re.search(r"jd.com", u):
+        elif re.search("jd\.com", u):
             jds.append(u)
-        elif re.search(r".bestbuy.", u):
+        elif re.search("\.bestbuy\.", u):
             bys.append(u)
-        elif re.search(r".amazon.", u):
+        elif re.search("\.amazon\.", u):
             ams.append(u)
-        elif re.search(r".yodobashi.", u):
+        elif re.search("\.yodobashi\.", u):
             yos.append(u)
-        elif re.search(r".biccamera.", u):
+        elif re.search("\.biccamera\.", u):
             bis.append(u)
-        elif re.search(r".e-earphone.", u):
+        elif re.search("\.e-earphone\.", u):
             eas.append(u)
-        elif re.search(r"kakaku.", u):
+        elif re.search("kakaku\.", u):
             kas.append(u)
         else:
             log_info("暂不支持此类网站数据抓取")
@@ -73,32 +73,40 @@ def run_new(urls):  # 新url调用接口
 
 def run_today(urls):  # 抓取每天新评论接口
     tms, jds, bys, ams, yos, bis, eas, kas = list_split(urls)
-    new_amazon.main(ams)
-    new_bestbuy.main(bys)
-    new_jd.main(jds)
-    new_tmall.main(tms)
-    new_yodo.main(yos)
-    new_bicc.main(bis)
-    new_ear.main(eas)
-    new_kakaku.main(kas)
-
-    # amazon = threading.Thread(target=new_amazon.main, args=(ams,))
-    # bestbuy = threading.Thread(target=new_bestbuy.main, args=(bys,))
-    # jd = threading.Thread(target=new_jd.main, args=(jds,))
-    # tmall = threading.Thread(target=new_tmall.main, args=(tms,))
-    # amazon.start()
-    # bestbuy.start()
-    # jd.start()
-    # tmall.start()
-    # amazon.join()
-    # bestbuy.join()
-    # jd.join()
-    # tmall.join()
+    # new_amazon.main(ams)
+    # new_bestbuy.main(bys)
+    # new_jd.main(jds)
+    # new_tmall.main(tms)
+    # new_yodo.main(yos)
+    # new_bicc.main(bis)
+    # new_ear.main(eas)
+    # new_kakaku.main(kas)
+    process = []
+    amazon = multiprocessing.Process(target=new_amazon.main, args=(ams,))
+    bestbuy = multiprocessing.Process(target=new_bestbuy.main, args=(bys,))
+    jd = multiprocessing.Process(target=new_jd.main, args=(jds,))
+    tmall = multiprocessing.Process(target=new_tmall.main, args=(tms,))
+    yodo = multiprocessing.Process(target=new_yodo.main, args=(yos,))
+    bicc = multiprocessing.Process(target=new_bicc.main, args=(bis,))
+    ear = multiprocessing.Process(target=new_ear.main, args=(eas,))
+    kakaku = multiprocessing.Process(target=new_kakaku.main, args=(kas,))
+    process.append(amazon)
+    process.append(bestbuy)
+    process.append(jd)
+    process.append(tmall)
+    process.append(yodo)
+    process.append(bicc)
+    process.append(ear)
+    process.append(kakaku)
+    for th in process:
+        th.start()
+    for th in process:
+        th.join()
 
 
 # 主逻辑
 def main():
-    # 1.从数据库取出所有urls,skus
+    # 1.从数据库取出所有urls, skus
     results = get_urls()
     list1 = []
     list2 = []
@@ -110,17 +118,16 @@ def main():
         count = select_count(sku_detail_id)
         # 4.数量为0,list1.append加入到调用新url接口的列表
         if count == 0:
-            list1.append(url)
+            list1.append(url+"$$$"+sku_detail_id)
         # 5.不为0,list2.append加入到调用抓取每天评论接口的列表
         else:
-            list2.append(url)
-    # print(list1, list2)
+            list2.append(url+"$$$"+sku_detail_id)
+    # if list2:
+    #     # 调用抓取每天的评论接口
+    #     run_today(list2)
     if list1:
         # 调用新url接口
         run_new(list1)
-    if list2:
-        # 调用抓取每天的评论接口
-        run_today(list2)
     # 关闭数据库
     close_db()
 

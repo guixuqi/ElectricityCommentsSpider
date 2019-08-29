@@ -2,296 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="479db188-4b07-4df7-a474-b985e7e736bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/biccamera/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/biccamera/bicc_review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/biccamera/new_bicc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/earphone/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/earphone/earphone_review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/earphone/new_ear.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kakaku/kakaku_review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kakaku/new_kakaku.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yodobashi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yodobashi/new_yodo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yodobashi/yodo_review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/JD_seller/JD_best_selling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/JD_seller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/JD_seller/img/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/amazon_seller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/amazon_seller/amazon_best_selling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/amazon_seller/img/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/bestbuy_seller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/bestbuy_seller/img/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/libs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/seller_manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/seller_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/tmall_seller/TM_best_selling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/tmall_seller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_seller/tmall_seller/img/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIXUQIG2BCNKM80_9Bb66Yz7@http-proxy-sg2.dobel.cn_9180.zip" beforeDir="false" afterPath="$PROJECT_DIR$/GUIXUQIG2BCNKM80_9Bb66Yz7@http-proxy-sg2.dobel.cn_9180.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JD/jd_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/JD/jd_review.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JD/new_jd.py" beforeDir="false" afterPath="$PROJECT_DIR$/JD/new_jd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081111.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081130.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081149.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081234.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081241.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081330.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081336.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081709.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081710.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081715.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081719.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081727.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081744.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907081747.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907090835.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907090853.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907090856.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907091705.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907091734.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907091738.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907091749.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907091800.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907091804.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907100918.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907100928.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907100932.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907100945.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906260848.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906260946.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906260950.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906260954.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906260955.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906260956.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906260958.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906260959.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261000.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261001.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261003.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261007.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261008.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261011.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261012.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261021.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261025.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261059.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261111.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261113.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261115.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261120.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261136.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261137.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261343.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261505.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261518.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261621.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261649.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261710.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261717.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261723.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261727.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906261728.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271012.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271014.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271019.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271040.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271108.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271120.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271127.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271321.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271326.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271335.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271336.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271354.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271409.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271435.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271501.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271521.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271524.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271526.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271527.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271528.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271622.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271636.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271649.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271652.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271705.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271711.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271734.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271740.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271749.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271809.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271852.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271856.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271859.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271902.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271906.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271910.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906271958.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280834.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280838.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280855.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280910.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280938.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280945.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280951.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280952.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280956.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906280957.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281016.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281053.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281059.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281105.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281111.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281112.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281118.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281119.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281128.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281132.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281133.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281136.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281137.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281153.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281155.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281159.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281403.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281406.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281408.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281410.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281411.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281430.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281434.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281440.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281443.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281452.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281613.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281626.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281630.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281647.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281650.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281717.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201906281721.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907010842.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907010850.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907010856.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907010904.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907010917.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907010929.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907010936.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907010944.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011100.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011126.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011127.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011151.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011154.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011159.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011239.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011701.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011702.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011703.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011704.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011728.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011736.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011745.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011747.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011755.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011758.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011902.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011945.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907011952.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012050.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012053.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012056.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012059.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012109.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012110.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012119.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907012125.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907020834.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907020926.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907021134.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907021250.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907021505.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907021511.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907021535.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907021550.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907021941.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907022039.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907022042.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907022046.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907022107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907030914.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907030934.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907030941.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031001.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031002.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031004.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031006.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031023.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031031.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031046.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031116.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031124.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031143.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031153.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031200.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031335.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031443.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031501.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031611.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031613.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031629.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031654.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031656.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031704.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031720.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031734.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907031735.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907040946.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907040950.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907040957.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041521.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041529.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041551.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041555.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041621.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041624.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041632.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041641.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907041647.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907050843.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907050845.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907050859.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907050902.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907050913.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907050948.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907050949.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907051033.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907080836.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907080844.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907080854.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907080910.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907080935.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907080941.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081001.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081021.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081027.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081109.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081110.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081111.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081130.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081149.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081234.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081241.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081330.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081336.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081709.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081710.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081715.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081719.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081727.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081744.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907081747.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907090835.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907090853.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907090856.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907091705.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907091734.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907091738.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907091749.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907091800.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907091804.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907100918.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907100928.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907100932.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907100945.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/All_Logs/201907251402.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Error_Logs/201907251402.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TMALL/GUIXUQIG2BCNKM80_9Bb66Yz7@http-proxy-sg2.dobel.cn_9180.zip" beforeDir="false" afterPath="$PROJECT_DIR$/TMALL/GUIXUQIG2BCNKM80_9Bb66Yz7@http-proxy-sg2.dobel.cn_9180.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TMALL/new_tmall.py" beforeDir="false" afterPath="$PROJECT_DIR$/TMALL/new_tmall.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TMALL/tmall_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/TMALL/tmall_review.py" afterDir="false" />
@@ -299,11 +31,20 @@
       <change beforePath="$PROJECT_DIR$/amazon/new_amazon.py" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/new_amazon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bestbuy/bestbuy_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/bestbuy/bestbuy_review.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bestbuy/new_bestbuy.py" beforeDir="false" afterPath="$PROJECT_DIR$/bestbuy/new_bestbuy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biccamera/bicc_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/biccamera/bicc_review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biccamera/new_bicc.py" beforeDir="false" afterPath="$PROJECT_DIR$/biccamera/new_bicc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/earphone/earphone_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/earphone/earphone_review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/earphone/new_ear.py" beforeDir="false" afterPath="$PROJECT_DIR$/earphone/new_ear.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kakaku/kakaku_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/kakaku/kakaku_review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kakaku/new_kakaku.py" beforeDir="false" afterPath="$PROJECT_DIR$/kakaku/new_kakaku.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teufel/new_teufel.py" beforeDir="false" afterPath="$PROJECT_DIR$/teufel/new_teufel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teufel/teufel_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/teufel/teufel_review.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yodobashi/new_yodo.py" beforeDir="false" afterPath="$PROJECT_DIR$/yodobashi/new_yodo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yodobashi/yodo_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/yodobashi/yodo_review.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -313,41 +54,73 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/reviews$new_kakaku.coverage" NAME="new_kakaku Coverage Results" MODIFIED="1564033489926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kakaku" />
-    <SUITE FILE_PATH="coverage/reviews$tmall_review.coverage" NAME="tmall_review Coverage Results" MODIFIED="1562121111353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TMALL" />
+    <SUITE FILE_PATH="coverage/reviews$tmall_review.coverage" NAME="tmall_review Coverage Results" MODIFIED="1566980123340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TMALL" />
     <SUITE FILE_PATH="coverage/reviews$urls.coverage" NAME="urls Coverage Results" MODIFIED="1561085407850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/reviews$tmall_review__1_.coverage" NAME="tmall_review (1) Coverage Results" MODIFIED="1561519156665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/WeChat Files/guixuqi02/FileStorage/File/2019-06" />
-    <SUITE FILE_PATH="coverage/reviews$new_teufel.coverage" NAME="new_teufel Coverage Results" MODIFIED="1564017747932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/teufel" />
-    <SUITE FILE_PATH="coverage/reviews$test.coverage" NAME="test Coverage Results" MODIFIED="1564022175787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/reviews$manage.coverage" NAME="manage Coverage Results" MODIFIED="1564017957937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/reviews$jd_review.coverage" NAME="jd_review Coverage Results" MODIFIED="1562749121072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JD" />
+    <SUITE FILE_PATH="coverage/reviews$pool_run.coverage" NAME="pool_run Coverage Results" MODIFIED="1566196971007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amazon" />
+    <SUITE FILE_PATH="coverage/reviews$new_teufel.coverage" NAME="new_teufel Coverage Results" MODIFIED="1567045926418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/teufel" />
+    <SUITE FILE_PATH="coverage/reviews$TM_best_selling.coverage" NAME="TM_best_selling Coverage Results" MODIFIED="1566960763906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/best_seller/tmall_seller" />
+    <SUITE FILE_PATH="coverage/reviews$test.coverage" NAME="test Coverage Results" MODIFIED="1566455789103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/reviews$best_selling__1_.coverage" NAME="best_selling (1) Coverage Results" MODIFIED="1566543055860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/best_seller/bestbuy_seller" />
+    <SUITE FILE_PATH="coverage/reviews$manage.coverage" NAME="manage Coverage Results" MODIFIED="1567068465388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/reviews$JD_best_selling.coverage" NAME="JD_best_selling Coverage Results" MODIFIED="1566876558209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/best_seller/JD_seller" />
     <SUITE FILE_PATH="coverage/reviews$teufel_review.coverage" NAME="teufel_review Coverage Results" MODIFIED="1564016392934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/teufel" />
+    <SUITE FILE_PATH="coverage/reviews$best_selling.coverage" NAME="best_selling Coverage Results" MODIFIED="1566788085419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/best_seller/amazon_seller" />
+    <SUITE FILE_PATH="coverage/reviews$jd_review.coverage" NAME="jd_review Coverage Results" MODIFIED="1566876324573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JD" />
     <SUITE FILE_PATH="coverage/reviews$new_ear.coverage" NAME="new_ear Coverage Results" MODIFIED="1563941066087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/earphone" />
-    <SUITE FILE_PATH="coverage/reviews$new_yodo.coverage" NAME="new_yodo Coverage Results" MODIFIED="1564019927398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yodobashi" />
+    <SUITE FILE_PATH="coverage/reviews$new_yodo.coverage" NAME="new_yodo Coverage Results" MODIFIED="1566466607630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yodobashi" />
     <SUITE FILE_PATH="coverage/reviews$new_tmall__1_.coverage" NAME="new_tmall (1) Coverage Results" MODIFIED="1561519224787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/WeChat Files/guixuqi02/FileStorage/File/2019-06" />
     <SUITE FILE_PATH="coverage/reviews$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1561624270574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../teufel" />
-    <SUITE FILE_PATH="coverage/reviews$new_bestbuy.coverage" NAME="new_bestbuy Coverage Results" MODIFIED="1563183606527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bestbuy" />
+    <SUITE FILE_PATH="coverage/reviews$new_bestbuy.coverage" NAME="new_bestbuy Coverage Results" MODIFIED="1565575276360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bestbuy" />
     <SUITE FILE_PATH="coverage/reviews$run_thread.coverage" NAME="run_thread Coverage Results" MODIFIED="1561019911958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/reviews$bestbuy_review.coverage" NAME="bestbuy_review Coverage Results" MODIFIED="1562747513607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bestbuy" />
     <SUITE FILE_PATH="coverage/reviews$earphone_review.coverage" NAME="earphone_review Coverage Results" MODIFIED="1564019007629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/earphone" />
     <SUITE FILE_PATH="coverage/reviews$kakaku_review.coverage" NAME="kakaku_review Coverage Results" MODIFIED="1564033598337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kakaku" />
+    <SUITE FILE_PATH="coverage/reviews$bestbuy_review.coverage" NAME="bestbuy_review Coverage Results" MODIFIED="1564036313944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bestbuy" />
     <SUITE FILE_PATH="coverage/reviews$ip_proxy.coverage" NAME="ip_proxy Coverage Results" MODIFIED="1562135152240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IP_proxy" />
     <SUITE FILE_PATH="coverage/reviews$yodo_review.coverage" NAME="yodo_review Coverage Results" MODIFIED="1563877161909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yodobashi" />
     <SUITE FILE_PATH="coverage/reviews$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1560931593783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bestbuy" />
     <SUITE FILE_PATH="coverage/reviews$bicc_review.coverage" NAME="bicc_review Coverage Results" MODIFIED="1564018532966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/biccamera" />
-    <SUITE FILE_PATH="coverage/reviews$new_tmall.coverage" NAME="new_tmall Coverage Results" MODIFIED="1563238779109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TMALL" />
-    <SUITE FILE_PATH="coverage/reviews$amazon_review.coverage" NAME="amazon_review Coverage Results" MODIFIED="1563498641125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amazon" />
-    <SUITE FILE_PATH="coverage/reviews$new_amazon.coverage" NAME="new_amazon Coverage Results" MODIFIED="1564018505439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amazon" />
+    <SUITE FILE_PATH="coverage/reviews$new_tmall.coverage" NAME="new_tmall Coverage Results" MODIFIED="1564624019423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TMALL" />
+    <SUITE FILE_PATH="coverage/reviews$amazon_review.coverage" NAME="amazon_review Coverage Results" MODIFIED="1566374670235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amazon" />
+    <SUITE FILE_PATH="coverage/reviews$new_amazon.coverage" NAME="new_amazon Coverage Results" MODIFIED="1567063750491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amazon" />
     <SUITE FILE_PATH="coverage/reviews$new_jd.coverage" NAME="new_jd Coverage Results" MODIFIED="1562146504547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JD" />
+    <SUITE FILE_PATH="coverage/reviews$seller_manage.coverage" NAME="seller_manage Coverage Results" MODIFIED="1566273612825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/best_seller" />
     <SUITE FILE_PATH="coverage/reviews$ip_proxy_t.coverage" NAME="ip_proxy_t Coverage Results" MODIFIED="1562201262924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IP_proxy" />
-    <SUITE FILE_PATH="coverage/reviews$utils.coverage" NAME="utils Coverage Results" MODIFIED="1563846071400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/reviews$utils.coverage" NAME="utils Coverage Results" MODIFIED="1567047088872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+            <state relative-caret-position="134">
+              <caret line="115" column="11" lean-forward="true" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -358,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon/new_amazon.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="142" column="22" lean-forward="true" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
+            <state relative-caret-position="197">
+              <caret line="131" column="21" lean-forward="true" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -368,10 +141,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yodobashi/new_yodo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#21#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teufel/new_teufel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+            <state relative-caret-position="132">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -379,22 +164,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kakaku/new_kakaku.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+            <state relative-caret-position="-3175">
+              <caret line="177" column="7" lean-forward="true" selection-start-line="177" selection-start-column="7" selection-end-line="177" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yodobashi/new_yodo.py">
+        <entry file="file://$PROJECT_DIR$/TMALL/tmall_review.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+            <state relative-caret-position="94">
+              <caret line="265" column="26" lean-forward="true" selection-start-line="265" selection-start-column="26" selection-end-line="265" selection-end-column="26" />
               <folding>
-                <element signature="e#21#30#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/amazon/amazon_review.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
+              <folding>
+                <element signature="e#21#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -411,28 +211,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>B074NBSF9N</find>
-      <find>B0748K7JW6</find>
-      <find>B01N3AJ0ID</find>
-      <find>B0711V7BV6</find>
-      <find>B07MCGZK3B</find>
-      <find>B07N6NRS8Q</find>
-      <find>580233296207</find>
-      <find>B078WRCW35</find>
-      <find>B01L2ZRYVE</find>
-      <find>9N</find>
-      <find>B01MQWUXZS</find>
-      <find>B01KJL4XNY</find>
-      <find>B0756Z8X82</find>
-      <find>B0749CW8X6</find>
-      <find>PRINT</find>
-      <find>B07G4KD8WW</find>
-      <find>B075YDD1P2</find>
-      <find>B075SSLKDB</find>
-      <find>528515320283</find>
       <find>B0713QM36X</find>
       <find>B0749BX1X3</find>
-      <find>6352842</find>
       <find>574870586003</find>
       <find>20</find>
       <find>pankuzu</find>
@@ -441,6 +221,26 @@
       <find>104</find>
       <find>33,980</find>
       <find>detail_status_level_top</find>
+      <find>A10</find>
+      <find>B07G1Y2K5F</find>
+      <find>6352842</find>
+      <find>B00Y839YMU</find>
+      <find>6084400</find>
+      <find>requests</find>
+      <find>2</find>
+      <find>B07W6SWVCZ</find>
+      <find>B07PZR3PVB</find>
+      <find>search</find>
+      <find>无总评分</find>
+      <find>无总评分数据</find>
+      <find>累计评价</find>
+      <find>591517810006</find>
+      <find>9</find>
+      <find>601048793773</find>
+      <find>598717955616</find>
+      <find>581004224377</find>
+      <find>弹出访问验证输入框</find>
+      <find>close</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -450,8 +250,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JD/test.py" />
-        <option value="$PROJECT_DIR$/amazon/test.py" />
         <option value="$PROJECT_DIR$/bestbuy/test.py" />
         <option value="$PROJECT_DIR$/bestbuy/bestbuy_urls.py" />
         <option value="$PROJECT_DIR$/amazon/amazon_urls.py" />
@@ -466,35 +264,49 @@
         <option value="$PROJECT_DIR$/IP_proxy/ip_proxy.py" />
         <option value="$PROJECT_DIR$/IP_proxy/ip_proxy_t.py" />
         <option value="$PROJECT_DIR$/Logs/log.py" />
-        <option value="$PROJECT_DIR$/JD/jd_review.py" />
-        <option value="$PROJECT_DIR$/bestbuy/bestbuy_review.py" />
-        <option value="$PROJECT_DIR$/amazon/new_amazon.py" />
-        <option value="$PROJECT_DIR$/TMALL/tmall_review.py" />
-        <option value="$PROJECT_DIR$/TMALL/new_tmall.py" />
-        <option value="$PROJECT_DIR$/JD/new_jd.py" />
+        <option value="$PROJECT_DIR$/amazon/reviews_top10.py" />
+        <option value="$PROJECT_DIR$/amazon/best_selling.py" />
+        <option value="$PROJECT_DIR$/amazon/best_seller/best_selling.py" />
+        <option value="$PROJECT_DIR$/best_seller/utils.py" />
+        <option value="$PROJECT_DIR$/amazon/pool_run.py" />
+        <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/yodobashi/new_yodo.py" />
+        <option value="$PROJECT_DIR$/biccamera/bicc_review.py" />
+        <option value="$PROJECT_DIR$/kakaku/kakaku_review.py" />
         <option value="$PROJECT_DIR$/biccamera/new_bicc.py" />
+        <option value="$PROJECT_DIR$/kakaku/new_kakaku.py" />
+        <option value="$PROJECT_DIR$/teufel/new_teufel.py" />
+        <option value="$PROJECT_DIR$/teufel/teufel_review.py" />
+        <option value="$PROJECT_DIR$/yodobashi/yodo_review.py" />
         <option value="$PROJECT_DIR$/earphone/earphone_review.py" />
         <option value="$PROJECT_DIR$/earphone/new_ear.py" />
-        <option value="$PROJECT_DIR$/yodobashi/yodo_review.py" />
-        <option value="$PROJECT_DIR$/yodobashi/new_yodo.py" />
-        <option value="$PROJECT_DIR$/teufel/teufel_review.py" />
-        <option value="$PROJECT_DIR$/teufel/new_teufel.py" />
+        <option value="$PROJECT_DIR$/best_seller/amazon_seller/test.py" />
+        <option value="$PROJECT_DIR$/best_seller/seller_manage.py" />
+        <option value="$PROJECT_DIR$/best_seller/bestbuy_seller/best_selling.py" />
+        <option value="$PROJECT_DIR$/bestbuy/bestbuy_review.py" />
+        <option value="$PROJECT_DIR$/best_seller/amazon_seller/best_selling.py" />
+        <option value="$PROJECT_DIR$/best_seller/tmall_seller/tm_best_selling.py" />
         <option value="$PROJECT_DIR$/amazon/amazon_review.py" />
+        <option value="$PROJECT_DIR$/best_seller/JD_seller/JD_best_selling.py" />
+        <option value="$PROJECT_DIR$/best_seller/libs.py" />
+        <option value="$PROJECT_DIR$/JD/jd_review.py" />
+        <option value="$PROJECT_DIR$/JD/new_jd.py" />
         <option value="$PROJECT_DIR$/bestbuy/new_bestbuy.py" />
-        <option value="$PROJECT_DIR$/biccamera/bicc_review.py" />
+        <option value="$PROJECT_DIR$/TMALL/new_tmall.py" />
+        <option value="$PROJECT_DIR$/Logs/All_Logs/201908271600.log" />
+        <option value="$PROJECT_DIR$/best_seller/seller_urls.py" />
+        <option value="$PROJECT_DIR$/best_seller/tmall_seller/TM_best_selling.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/TMALL/tmall_review.py" />
         <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/amazon/new_amazon.py" />
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/kakaku/kakaku_review.py" />
-        <option value="$PROJECT_DIR$/kakaku/new_kakaku.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="294" />
-    <option name="y" value="59" />
-    <option name="width" value="1067" />
+    <option name="x" value="-7" />
+    <option name="width" value="947" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -503,6 +315,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -513,29 +326,41 @@
             <path>
               <item name="reviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="reviews" type="462c0819:PsiDirectoryNode" />
-              <item name="earphone" type="462c0819:PsiDirectoryNode" />
+              <item name="amazon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="reviews" type="462c0819:PsiDirectoryNode" />
-              <item name="kakaku" type="462c0819:PsiDirectoryNode" />
+              <item name="Logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reviews" type="462c0819:PsiDirectoryNode" />
+              <item name="Logs" type="462c0819:PsiDirectoryNode" />
+              <item name="All_Logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../parse_review" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hhh\Desktop\Demo\reviews\best_seller\amazon_seller" />
+      <recent name="C:\Users\hhh\Desktop\Demo\reviews" />
+      <recent name="C:\Users\hhh\Desktop\Demo\reviews\amazon\best_seller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hhh\Desktop\Demo\reviews\amazon" />
+      <recent name="C:\Users\hhh\Desktop\Demo\reviews\best_seller\bestbuy_seller" />
       <recent name="C:\Users\hhh\Desktop\Demo\reviews" />
       <recent name="C:\Users\BruceChen\Desktop\Demo\reviews\TMALL" />
     </key>
@@ -552,96 +377,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kakaku_review">
-    <configuration name="earphone_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="reviews" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/earphone" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/earphone/earphone_review.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="kakaku_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="reviews" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kakaku" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kakaku/kakaku_review.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="new_kakaku" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="reviews" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kakaku" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kakaku/new_kakaku.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="new_yodo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="reviews" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yodobashi" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yodobashi/new_yodo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="reviews" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -654,7 +391,95 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="new_amazon" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="reviews" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/amazon" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/amazon/new_amazon.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="new_teufel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="reviews" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/teufel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teufel/new_teufel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tmall_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="reviews" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TMALL" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TMALL/tmall_review.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="reviews" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -665,11 +490,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.kakaku_review" />
-        <item itemvalue="Python.new_kakaku" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.new_yodo" />
-        <item itemvalue="Python.earphone_review" />
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.new_amazon" />
+        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.new_teufel" />
+        <item itemvalue="Python.tmall_review" />
       </list>
     </recent_temporary>
   </component>
@@ -746,12 +571,58 @@
       <workItem from="1563764377511" duration="17750000" />
       <workItem from="1563842048107" duration="26647000" />
       <workItem from="1563928788729" duration="30933000" />
-      <workItem from="1564014754350" duration="14890000" />
+      <workItem from="1564014754350" duration="20493000" />
+      <workItem from="1564045396093" duration="393000" />
+      <workItem from="1564101155256" duration="975000" />
+      <workItem from="1564107279740" duration="3736000" />
+      <workItem from="1564133839266" duration="1387000" />
+      <workItem from="1564360056226" duration="2473000" />
+      <workItem from="1564390904410" duration="986000" />
+      <workItem from="1564446815581" duration="4350000" />
+      <workItem from="1564480892326" duration="932000" />
+      <workItem from="1564550908564" duration="5416000" />
+      <workItem from="1564572088027" duration="693000" />
+      <workItem from="1564619923285" duration="4207000" />
+      <workItem from="1564652819174" duration="636000" />
+      <workItem from="1564705741195" duration="891000" />
+      <workItem from="1564738725841" duration="1050000" />
+      <workItem from="1564965505406" duration="1194000" />
+      <workItem from="1564998768367" duration="917000" />
+      <workItem from="1565054597597" duration="6183000" />
+      <workItem from="1565137547990" duration="1735000" />
+      <workItem from="1565170587757" duration="1217000" />
+      <workItem from="1565224555537" duration="1744000" />
+      <workItem from="1565230384643" duration="6147000" />
+      <workItem from="1565256447450" duration="4497000" />
+      <workItem from="1565265993902" duration="1041000" />
+      <workItem from="1565310816250" duration="6656000" />
+      <workItem from="1565338368214" duration="591000" />
+      <workItem from="1565338962724" duration="319000" />
+      <workItem from="1565339290337" duration="1807000" />
+      <workItem from="1565570158567" duration="15665000" />
+      <workItem from="1565656248698" duration="27804000" />
+      <workItem from="1565742703402" duration="28120000" />
+      <workItem from="1565829325021" duration="2591000" />
+      <workItem from="1565835086536" duration="1267000" />
+      <workItem from="1565837816083" duration="12212000" />
+      <workItem from="1565915905974" duration="24777000" />
+      <workItem from="1566175125203" duration="29520000" />
+      <workItem from="1566261036206" duration="11711000" />
+      <workItem from="1566282117426" duration="9174000" />
+      <workItem from="1566347515285" duration="42267000" />
+      <workItem from="1566456117256" duration="12088000" />
+      <workItem from="1566520480081" duration="19268000" />
+      <workItem from="1566779859828" duration="10986000" />
+      <workItem from="1566802274281" duration="8883000" />
+      <workItem from="1566867874611" duration="21643000" />
+      <workItem from="1566952285856" duration="25214000" />
+      <workItem from="1566986746153" duration="461000" />
+      <workItem from="1567038817599" duration="15895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="497234000" />
+    <option name="totallyTimeSpent" value="884556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -766,22 +637,50 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49861112" visible="true" weight="0.19368723" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861112" visible="true" weight="0.16427547" />
       <window_info id="Structure" order="1" sideWeight="0.5013889" side_tool="true" weight="0.16061899" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.50418997" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.30027932" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978479" weight="0.41899443" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3896648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32924107" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924107" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.55915177" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50071734" side_tool="true" weight="0.3603352" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49928263" weight="0.37011173" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6131285" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021521" side_tool="true" weight="0.17877094" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49928263" weight="0.51536316" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32960895" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.32977587" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="Mongo Explorer" order="6" weight="0.32977587" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32998565" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861112" visible="true" weight="0.17503586" />
+      <window_info id="Structure" order="1" sideWeight="0.5013889" side_tool="true" weight="0.16061899" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" weight="0.52374303" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.56703913" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32924107" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924107" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6131285" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50071734" side_tool="true" weight="0.40921786" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49928263" weight="0.4511173" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -790,7 +689,7 @@
       <window_info anchor="right" id="R Graphics" order="5" />
       <window_info anchor="right" id="Mongo Explorer" order="6" weight="0.32977587" />
       <window_info anchor="right" id="Database" order="7" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -812,266 +711,452 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/bestbuy/new_bestbuy.py</url>
-          <line>87</line>
+          <line>90</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TMALL/tmall_review.py</url>
-          <line>99</line>
+          <line>107</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/amazon/amazon_review.py</url>
-          <line>99</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/biccamera/bicc_review.py</url>
           <line>87</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/best_seller/bestbuy_seller/bestbuy_best_selling.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/pool_run.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/pool_run.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/pool_run.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/pool_run.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/pool_run.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/pool_run.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/pool_run.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/pool_run.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/best_seller/amazon_seller/test.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/best_seller/bestbuy_seller/bestbuy_best_selling.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/amazon_review.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/amazon_review.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/amazon/new_amazon.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907160912.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907160915.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907181057.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907181056.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907190901.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907190859.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907190857.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907190902.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907190920.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907191746.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907191738.log" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908221738.log" />
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908231711.log" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/retrying.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2221">
-          <caret line="321" selection-start-line="321" selection-end-line="321" />
+        <state relative-caret-position="1452">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/selenium/webdriver/support/wait.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="149">
+          <caret line="386" selection-start-line="386" selection-end-line="386" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907221706.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907221719.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907221733.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907221746.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907221812.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907230834.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907230907.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907230916.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907230920.log" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907230921.log" />
-    <entry file="file://$PROJECT_DIR$/run_thread.py" />
-    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201907231002.log">
+    <entry file="file://$PROJECT_DIR$/best_seller/amazon_seller/amazon_best_selling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/adapters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="515" selection-start-line="515" selection-end-line="515" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JD/jd_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="99">
+          <caret line="6" selection-end-line="121" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#21#30#0" expanded="true" />
+            <element signature="e#1582#1588#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TMALL/new_tmall.py">
+    <entry file="file://$PROJECT_DIR$/best_seller/seller_manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="86" column="15" lean-forward="true" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        <state relative-caret-position="363">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/best_seller/bestbuy_seller/bestbuy_best_selling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="37" column="36" selection-end-line="56" selection-end-column="41" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#21#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JD/new_jd.py">
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908271013.log" />
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908271039.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biccamera/new_bicc.py">
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908271040.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" column="119" selection-start-line="11" selection-start-column="119" selection-end-line="11" selection-end-column="119" />
-          <folding>
-            <element signature="e#21#30#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-198" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kakaku/kaka.txt">
+    <entry file="file://$PROJECT_DIR$/best_seller/JD_seller/JD_best_selling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="370" lean-forward="true" selection-start-column="370" selection-end-column="370" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yodobashi/yodo_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="45" column="103" selection-start-line="45" selection-start-column="103" selection-end-line="45" selection-end-column="103" />
+        <state relative-caret-position="138">
+          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
           <folding>
             <element signature="e#21#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908271144.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="615" column="8" selection-start-line="615" selection-start-column="8" selection-end-line="615" selection-end-column="8" />
+        <state relative-caret-position="-6896404">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TMALL/tmall_review.py">
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908271156.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="80" selection-start-line="80" selection-end-line="81" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-6063" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teufel/teufel_review.py">
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908271631.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1041">
-          <caret line="97" column="16" lean-forward="true" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/amazon_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="251" column="21" lean-forward="true" selection-start-line="251" selection-start-column="21" selection-end-line="251" selection-end-column="21" />
+        <state relative-caret-position="-16065">
+          <caret line="5" column="64" lean-forward="true" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bestbuy/bestbuy_review.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="177" column="39" lean-forward="true" selection-start-line="177" selection-start-column="39" selection-end-line="177" selection-end-column="39" />
+        <state relative-caret-position="689">
+          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bestbuy/new_bestbuy.py">
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908271600.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+        <state relative-caret-position="167">
+          <caret line="99" column="58" selection-start-line="99" selection-start-column="48" selection-end-line="99" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/best_seller/tmall_seller/img/520491114368.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908281026.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="1107" column="83" selection-start-line="1107" selection-start-column="79" selection-end-line="1107" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908281055.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3558">
+          <caret line="723" selection-start-line="723" selection-end-line="723" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908281346.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908281413.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="68" selection-start-line="68" selection-end-line="68" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908281402.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908281559.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908281602.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="582" column="34" lean-forward="true" selection-start-line="582" selection-start-column="34" selection-end-line="582" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908281615.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JD/jd_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6666">
+          <caret line="206" column="21" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="21" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biccamera/bicc_review.py">
+    <entry file="file://$PROJECT_DIR$/best_seller/libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="2640">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding>
-            <element signature="e#21#30#0" expanded="true" />
+            <element signature="e#21#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/urllib3/util/url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="12276">
+          <caret line="373" selection-start-line="373" selection-end-line="373" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#9867#10094#0" />
-            <element signature="e#10115#10589#0" />
-            <element signature="e#10615#10885#0" />
-            <element signature="e#10928#10957#0" />
+            <element signature="e#14407#14429#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
+    <entry file="file://$PROJECT_DIR$/best_seller/tmall_seller/TM_best_selling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="30" column="112" lean-forward="true" selection-start-line="30" selection-start-column="112" selection-end-line="30" selection-end-column="112" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/new_amazon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="142" column="22" lean-forward="true" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/earphone/earphone_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yodobashi/new_yodo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        <state relative-caret-position="825">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding>
             <element signature="e#21#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/earphone/new_ear.py">
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908290835.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/best_seller/seller_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908290903.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TMALL/tmall_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908291034.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3175">
+          <caret line="177" column="7" lean-forward="true" selection-start-line="177" selection-start-column="7" selection-end-line="177" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908291526.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/amazon_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#21#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908291529.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TMALL/tmall_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="265" column="26" lean-forward="true" selection-start-line="265" selection-start-column="26" selection-end-line="265" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bestbuy/new_bestbuy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JD/new_jd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TMALL/new_tmall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teufel/new_teufel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yodobashi/new_yodo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#21#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biccamera/new_bicc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/earphone/new_ear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="8" column="86" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kakaku/new_kakaku.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="86" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/All_Logs/201908291556.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96894" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/new_amazon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="131" column="21" lean-forward="true" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -1080,38 +1165,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+        <state relative-caret-position="134">
+          <caret line="115" column="11" lean-forward="true" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kakaku/kakaku_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="137" column="16" lean-forward="true" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
-          <folding>
-            <element signature="e#118#129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teufel/new_teufel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kakaku/new_kakaku.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
         </state>
       </provider>
     </entry>

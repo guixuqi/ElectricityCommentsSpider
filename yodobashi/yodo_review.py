@@ -38,9 +38,9 @@ class YodoReview:
         self.driver.get(self.url)
 
     def get_score(self):
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
-        if not self.SKU_DETAIL_ID:
-            return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        # if not self.SKU_DETAIL_ID:
+        #     return True
         try:
             self.score = WebDriverWait(self.driver, 10).until(
                 lambda driver: self.driver.find_element_by_xpath("//strong[@class='fs16 red alignM ml10']")).text
@@ -49,7 +49,7 @@ class YodoReview:
         except:
             self.score = 0
             logger(self.name, self.SKU_ID, "无总评分信息")
-        save_score(self.SKU_ID, self.score, self.name, self.SKU_DETAIL_ID)
+        save_score(self.SKU_ID, self.score, self.name, self.SKU_DETAIL_ID, conn)
 
     def get_content_list(self):
         dr = self.driver
@@ -109,7 +109,9 @@ class YodoReview:
             next_url = None
         return next_url
 
-    def run(self, url):
+    def run(self, start_url):
+        url = start_url.split("$$$")[0]
+        self.SKU_DETAIL_ID = start_url.split("$$$")[1]
         try:
             self.get_url(url)
         except:

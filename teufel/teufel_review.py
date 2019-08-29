@@ -54,7 +54,7 @@ class TeufulReview:
         self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
         # print(self.SKU_DETAIL_ID)
         # 保存总评分
-        save_score(self.sku_id, score, self.name, self.SKU_DETAIL_ID)
+        save_score(self.sku_id, score, self.name, self.SKU_DETAIL_ID, conn)
 
         # 提取评论
         self.get_review()

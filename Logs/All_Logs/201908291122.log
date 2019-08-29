@@ -1,0 +1,46 @@
+2019-08-29 11:22:42,661 - root - INFO - Amazon,无url信息或传入参数格式不是列表
+2019-08-29 11:22:42,662 - root - INFO - BestBuy,无url信息或传入参数格式不是列表
+2019-08-29 11:22:42,662 - root - INFO - JD,无url信息或传入参数格式不是列表
+2019-08-29 11:23:20,403 - root - ERROR - tmall(528515320283)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:23:20,469 - root - INFO - Tmall,528515320283共更新了0条,
+2019-08-29 11:24:01,824 - root - ERROR - tmall(565187422922)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:24:01,894 - root - INFO - Tmall,565187422922共更新了0条,
+2019-08-29 11:26:37,488 - root - ERROR - tmall(580233296207)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 62, in enter_review
+    self.click_review()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 93, in click_review
+    EC.element_to_be_clickable((By.XPATH, "//div[@id='J_TabBarBox']//a[text()='累计评价 ']")))
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2019-08-29 11:27:47,552 - root - ERROR - tmall(574870586003)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+

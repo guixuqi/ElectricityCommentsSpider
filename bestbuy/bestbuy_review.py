@@ -1,5 +1,9 @@
+import cx_Oracle
 import os
+import queue
 import sys
+import threading
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, ""))
 import re
@@ -8,8 +12,10 @@ import time
 import requests
 from lxml import etree
 from retrying import retry
-from utils import close_db, get_ua, review_split, save_score, save_review, logger, log_info, SKU_DETAIL_ID, c, conn, max_date
+from utils import close_db, get_ua, review_split, save_score, save_review, logger, log_info, SKU_DETAIL_ID, max_date, update_score, requests_config
 
+dsnStr = cx_Oracle.makedsn("192.168.110.205", 1521, "EIP")
+conn = cx_Oracle.connect("EIP", "EIP", dsnStr, threaded=True)
 
 class BestBuyReview:
 
@@ -35,36 +41,40 @@ class BestBuyReview:
     @retry(stop_max_attempt_number=5)
     def parse_url(self, number=5):
         kw = {"page": 1, "rating": number, "sort": "MOST_RECENT"}
-        resp = requests.get(self.url, headers=self.header, params=kw, timeout=60)
+        # resp = requests.get(self.url, headers=self.header, params=kw, timeout=60)
+        s = requests_config()
+        resp = s.get(self.url, headers=self.header, params=kw, timeout=60)
         # print(resp.url)
         html = etree.HTML(resp.content.decode())
         return html
 
     @retry(stop_max_attempt_number=5)
     def parse_next_url(self, next_url):
-        next_resp = requests.get(next_url, headers=self.header, timeout=60)
+        # next_resp = requests.get(next_url, headers=self.header, timeout=60)
+        s = requests_config()
+        next_resp = s.get(next_url, headers=self.header, timeout=60)
         next_html = etree.HTML(next_resp.content.decode())
         return next_html
 
     def get_content_list(self, html):
         # 总评分
-        total_score_list = html.xpath("//span[@class='overall-rating']/text()")
+        total_score_list = html.xpath("//div[@class='col-xs-3 over-all-rating']//span[@class='overall-rating']/text()")
         if total_score_list:
             self.dict["total_score"] = "".join(total_score_list).strip()
             score = self.dict["total_score"]
             score = float(score)
         else:
+            print("{}无总评分数据".format(self.sku_id))
             log_info("{}无总评分数据".format(self.sku_id))
             score = 0
         # 保存
         # 以SKU_ID和ECOMMERCE_CODE联合查询ECOMMERCE_SKU_DETAIL表SKU_DETAIL_ID的值
-        if not SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE):
-            return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
-        # 查询数据库评论最晚日期
-        self.max_date = max_date(self.SKU_DETAIL_ID)
+        # if not SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE):
+        #     return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
         # 保存总评分
-        save_score(self.sku_id, score, self.name, self.SKU_DETAIL_ID)
+        if save_score(self.sku_id, score, self.name, self.SKU_DETAIL_ID, conn):
+            update_score(score, self.sku_id, self.name, self.SKU_DETAIL_ID, conn)
         # 评论内容(以评论星级分类(1-5)爬取)
         for number in reversed(range(1, 6)):
             self.comments_list = []
@@ -96,8 +106,6 @@ class BestBuyReview:
             if self.comment_data(next_html, number):
                 return True
             next_url = self.next_url(next_html)
-        print("BestBuy,{}共抓取了{}条,".format(self.sku_id, self.comment_num))
-        log_info("BestBuy,{}共抓取了{}条,".format(self.sku_id, self.comment_num))
 
     def comment_data(self, html, number):
         comments_lis = html.xpath("//ul[@class='reviews-list']/li")
@@ -144,19 +152,14 @@ class BestBuyReview:
                 continue
             # 保存数据库
             sql = save_review(REVIEW_ID, self.sku_id, number, comment_dict['comment_user'], comment_dict['comment_title'], REVIEW_TEXT1, REVIEW_TEXT2, REVIEW_TEXT3, REVIEW_TEXT4, REVIEW_DATE, REVIEW_TEXT5, self.SKU_DETAIL_ID)
-            CREATE_TIME = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
-            sql0 = "update ECOMMERCE_REVIEW_P set REVIEW_STAR={}, REVIEW_NAME='{}', REVIEW_TITLE='{}', REVIEW_TEXT1='{}', REVIEW_TEXT2='{}', REVIEW_TEXT3='{}', REVIEW_DATE=to_date('{}','yyyy/MM/dd'), CREATE_TIME=to_date('{}','yyyy/MM/dd HH24:mi:ss'), SKU_DETAIL_ID='{}' where REVIEW_ID='{}'".format(number, comment_dict['comment_user'], comment_dict['comment_title'].replace("'", ""), REVIEW_TEXT1.replace("'", ""), REVIEW_TEXT2.replace("'", ""), REVIEW_TEXT3.replace("'", ""), REVIEW_DATE, CREATE_TIME, self.SKU_DETAIL_ID, REVIEW_ID)
             try:
+                c = conn.cursor()
                 c.execute(sql)
                 conn.commit()
                 self.comment_num += 1
             except Exception as e:
-                try:
-                    c.execute(sql0)
-                    conn.commit()
-                except Exception as e:
-                    print(e, "{}({})保存失败".format(self.name, self.sku_id))
-                    conn.rollback()
+                print(e, "{}({})保存失败".format(self.name, self.sku_id))
+                conn.rollback()
 
     def star_percent(self, html, num):
         rating_bars = html.xpath("//button[@data-track='Summary: Bar Graph: {} Star']".format(num))[0]
@@ -164,7 +167,9 @@ class BestBuyReview:
         percent = rating_bars.xpath(".//span[@class='percent']/text()")
         return star, percent
 
-    def run(self, url):
+    def run(self, start_url):
+        url = start_url.split("$$$")[0]
+        self.SKU_DETAIL_ID = start_url.split("$$$")[1]
         try:
             self.get_url(url)
         except Exception as e:
@@ -175,25 +180,36 @@ class BestBuyReview:
         except:
             print("{}请求失败".format(self.sku_id))
             return
-        self.get_content_list(html_str)
-        print("BestBuy,{}共更新了{}条,".format(self.sku_id, self.comment_num))
-        log_info("BestBuy,{}共更新了{}条".format(self.sku_id, self.comment_num))
-
+        try:
+            self.get_content_list(html_str)
+        except Exception as e:
+            print(e, "{}".format(self.sku_id))
+        print("BestBuy,{}共抓取/更新了{}条,".format(self.sku_id, self.comment_num))
+        # log_info("BestBuy,{}共抓取了{}条".format(self.sku_id, self.comment_num))
 
 
 def run(urls):
-    start = time.time()
+    # start = time.time()
+    print(len(urls))
     if len(urls) < 1 or isinstance(urls, list) is False:
         # print("无url信息或传入参数格式不是列表")
         log_info("BestBuy,无url信息或传入参数格式不是列表")
         return True
+    q = queue.Queue()
     for url in urls:
-        b = BestBuyReview()
-        b.run(url)
+        # b = BestBuyReview()
+        # b.run(url)
+        t = threading.Thread(target=BestBuyReview().run, args=(url,))
+        q.put(t)
+    while not q.empty():
+        t = q.get()
+        q.task_done()
+        t.start()
+    q.join()
     # 关闭数据库
     # close_db()
-    end = time.time()
-    print('BestBuy_end,耗时%s秒' % (end - start))
+    # end = time.time()
+    # print('BestBuy_end,耗时%s秒' % (end - start))
     # log_info("BestBuy_end,耗时%s秒" % (end - start))
 
 

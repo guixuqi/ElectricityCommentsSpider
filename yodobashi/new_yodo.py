@@ -18,9 +18,9 @@ from selenium.webdriver.common.by import By
 class YodoNewReview(YodoReview):
 
     def get_score(self):
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
-        if not self.SKU_DETAIL_ID:
-            return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.SKU_ID, self.ECOMMERCE_CODE)
+        # if not self.SKU_DETAIL_ID:
+        #     return True
         self.max_date = max_date(self.SKU_DETAIL_ID)
         try:
             self.score = WebDriverWait(self.driver, 10).until(
@@ -30,7 +30,7 @@ class YodoNewReview(YodoReview):
             self.score = 0
             logger(self.name, self.SKU_ID, "无总评分信息")
         print(self.score)
-        update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID)
+        update_score(self.score, self.SKU_ID, self.name, self.SKU_DETAIL_ID, conn)
 
     def get_content_list(self):
         dr = self.driver

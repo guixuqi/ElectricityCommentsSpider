@@ -9,10 +9,10 @@ from utils import save_score, SKU_DETAIL_ID, review_split, save_review, c, conn,
 class KakakuNewReview(KakakuReview):
 
     def parse_score(self, html):
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
-        if not self.SKU_DETAIL_ID:
-            print(self.sku_id+"查询不到SKU_DETAIL_ID")
-            return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(self.sku_id, self.ECOMMERCE_CODE)
+        # if not self.SKU_DETAIL_ID:
+        #     print(self.sku_id+"查询不到SKU_DETAIL_ID")
+        #     return True
         self.max_date = max_date(self.SKU_DETAIL_ID)
         # 总评分
         try:
@@ -22,7 +22,7 @@ class KakakuNewReview(KakakuReview):
             print(self.sku_id+"获取总评分失败", e)
             total_score = 0
         # 更新评分
-        update_score(total_score, self.sku_id, self.name, self.SKU_DETAIL_ID)
+        update_score(total_score, self.sku_id, self.name, self.SKU_DETAIL_ID, conn)
 
     def parse_review(self, html):
         divs = html.xpath("//div[@class='reviewBox ver2013 boxGr']")

@@ -1,0 +1,470 @@
+2019-08-29 11:30:20,653 - root - INFO - Amazon,无url信息或传入参数格式不是列表
+2019-08-29 11:30:20,654 - root - INFO - BestBuy,无url信息或传入参数格式不是列表
+2019-08-29 11:30:20,654 - root - INFO - JD,无url信息或传入参数格式不是列表
+2019-08-29 11:31:21,347 - root - ERROR - tmall(528515320283)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:31:21,414 - root - INFO - Tmall,528515320283共更新了0条,
+2019-08-29 11:32:21,994 - root - ERROR - tmall(565187422922)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:32:22,058 - root - INFO - Tmall,565187422922共更新了0条,
+2019-08-29 11:33:13,990 - root - ERROR - tmall(580233296207)报错信息：第1条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:33:14,068 - root - ERROR - tmall(580233296207)报错信息：第1条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:33:14,136 - root - INFO - Tmall,580233296207共更新了1条,
+2019-08-29 11:34:20,475 - root - ERROR - tmall(574870586003)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:34:20,562 - root - ERROR - tmall(574870586003)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:34:20,640 - root - ERROR - tmall(574870586003)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:34:20,725 - root - INFO - Tmall,574870586003共更新了0条,
+2019-08-29 11:35:11,562 - root - ERROR - tmall(590865770191)报错信息：第3条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:35:11,652 - root - ERROR - tmall(590865770191)报错信息：第3条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:35:11,717 - root - INFO - Tmall,590865770191共更新了3条,
+2019-08-29 11:36:08,940 - root - ERROR - tmall(552634156539)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:36:09,016 - root - ERROR - tmall(552634156539)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:36:09,104 - root - ERROR - tmall(552634156539)报错信息：第0条评论保存失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\new_tmall.py", line 78, in get_content_list
+    c.execute(sql_review)
+cx_Oracle.IntegrityError: ORA-00001: 违反唯一约束条件 (EIP.ECOMMERCE_REVIEW_PIX3)
+2019-08-29 11:36:09,171 - root - INFO - Tmall,552634156539共更新了0条,
+2019-08-29 11:36:54,439 - root - ERROR - tmall(591124740347)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:37:54,992 - root - ERROR - tmall(594621323382)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:38:36,335 - root - ERROR - tmall(597596146344)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:39:50,513 - root - ERROR - tmall(520491114368)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:40:38,268 - root - ERROR - tmall(571950797740)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:41:33,252 - root - ERROR - tmall(587897190754)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:42:42,366 - root - ERROR - tmall(557856671085)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:43:43,512 - root - ERROR - tmall(577445015790)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:44:27,622 - root - ERROR - tmall(591517810006)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:45:23,664 - root - INFO - tmall,弹出访问验证输入框,被限制访问
+2019-08-29 11:45:23,664 - root - INFO - Tmall,601048793773共更新了0条,
+2019-08-29 11:46:22,628 - root - ERROR - tmall(598717955616)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:47:21,038 - root - ERROR - tmall(592160731113)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:49:53,090 - root - ERROR - tmall(590865770191)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:50:39,494 - root - ERROR - tmall(540956139289)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:51:22,915 - root - ERROR - tmall(541004562856)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:52:26,279 - root - ERROR - tmall(589918640800)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:53:19,711 - root - ERROR - tmall(589974307342)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:54:11,125 - root - ERROR - tmall(589880871893)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:55:05,627 - root - ERROR - tmall(537765811321)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:55:51,314 - root - ERROR - tmall(554836374185)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:56:37,477 - root - ERROR - tmall(44261938883)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+
+2019-08-29 11:57:34,349 - root - ERROR - tmall(8540077011)报错信息：发送请求,进入评论页面失败
+Traceback (most recent call last):
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 215, in run
+    self.enter_review()  # 发送请求,进入评论页面
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 66, in enter_review
+    self.order_time()
+  File "C:\Users\hhh\Desktop\Demo\reviews\TMALL\tmall_review.py", line 110, in order_time
+    element_artist.click()
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hhh\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.100)
+

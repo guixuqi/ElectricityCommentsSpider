@@ -1,14 +1,22 @@
+import cx_Oracle
 import os
+import queue
 import sys
+import threading
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, ""))
 from datetime import datetime
 import requests
 import re, json
 import time
-from utils import review_split, save_json, get_ua, save_review, c, conn, save_score, log_info, logger as jd_log, SKU_DETAIL_ID, max_date
+from utils import review_split, save_json, get_ua, save_review, save_score, log_info, logger as jd_log, SKU_DETAIL_ID, max_date
 from retrying import retry
 from utils import close_db
+
+dsnStr = cx_Oracle.makedsn("192.168.110.205", 1521, "EIP")
+conn = cx_Oracle.connect("EIP", "EIP", dsnStr, threaded=True)
+sem = threading.Semaphore(40)  # 限制线程的最大数量
 
 
 class JDReview:
@@ -109,11 +117,11 @@ class JDReview:
             jd_log(self.name, productId, "无总评分数据")
             score = 0
         # 以SKU_ID和ECOMMERCE_CODE联合查询ECOMMERCE_SKU_DETAIL表SKU_DETAIL_ID的值
-        if not SKU_DETAIL_ID(productId, self.ECOMMERCE_CODE):
-            return True
-        self.SKU_DETAIL_ID = SKU_DETAIL_ID(productId, self.ECOMMERCE_CODE)
+        # if not SKU_DETAIL_ID(productId, self.ECOMMERCE_CODE):
+        #     return True
+        # self.SKU_DETAIL_ID = SKU_DETAIL_ID(productId, self.ECOMMERCE_CODE)
         # 保存总评分
-        save_score(productId, score, self.name, self.SKU_DETAIL_ID)
+        save_score(productId, score, self.name, self.SKU_DETAIL_ID, conn)
 
         # 京东最多只返回100页数据
         for i in range(100):
@@ -154,6 +162,7 @@ class JDReview:
                 REVIEW_TEXT2.replace("'", ""), REVIEW_TEXT3.replace("'", ""), REVIEW_TEXT4.replace("'", ""),
                 REVIEW_DATE, CREATE_TIME, REVIEW_TEXT5.replace("'", ""), self.SKU_DETAIL_ID)
             try:
+                c = conn.cursor()
                 c.execute(sql)
                 conn.commit()
                 self.num += 1
@@ -163,33 +172,46 @@ class JDReview:
                 jd_log(self.name, SKU_ID, "数据库保存/更新失败")
                 conn.rollback()
 
-    def run(self, jd_url):
-        if self.conments(jd_url):
-            return
-        # 保存数据
-        if len(self.commentList) > 0:
-            self.save_data()
-        else:
-            self.num = 0
-        log_info("JD,{}共更新了{}条,".format(jd_url, self.num))
-        print("JD,{}共更新了{}条,".format(jd_url, self.num))
-        # print(self.num)
+    def run(self, start_url):
+        with sem:
+            jd_url = start_url.split("$$$")[0]
+            self.SKU_DETAIL_ID = start_url.split("$$$")[1]
+            if self.conments(jd_url):
+                return
+            # 保存数据
+            if len(self.commentList) > 0:
+                self.save_data()
+            else:
+                self.num = 0
+            log_info("JD,{}共更新了{}条,".format(jd_url, self.num))
+            print("JD,{}共更新了{}条,".format(jd_url, self.num))
+            # print(self.num)
 
 
 def run(urls):
-    start = time.time()
+    # start = time.time()
+    print(len(urls))
     if len(urls) < 1 or isinstance(urls, list) is False:
         # print("无url信息或传入参数格式不是列表")
         log_info("JD,无url信息或传入参数格式不是列表")
         return True
+    # for url in urls:
+    #     jd = JDReview()
+    #     jd.run(url)
+    q = queue.Queue()
     for url in urls:
-        jd = JDReview()
-        jd.run(url)
+        t = threading.Thread(target=JDReview().run, args=(url,))
+        q.put(t)
+    while not q.empty():
+        t = q.get()
+        q.task_done()
+        t.start()
+    q.join()
     # 关闭数据库
     # close_db()
-    end = time.time()
-    log_info("JD,耗时%s秒" % (end - start))
-    print('耗时%s秒' % (end - start))
+    # end = time.time()
+    # log_info("JD,耗时%s秒" % (end - start))
+    # print('耗时%s秒' % (end - start))
 
 
 if __name__ == '__main__':
